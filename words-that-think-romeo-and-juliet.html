@@ -1,0 +1,3287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Words That Think · Romeo and Juliet</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+<meta name="description" content="This vocabulary collection features 75 carefully selected words from William Shakespeare's 'Romeo and Juliet' (published 1597). Words are drawn from all five acts, ranging from 'pernicious' and 'portentous' to 'inexorable' and 'sepulcher'. Each entry includes a direct quotation from the play, a thematic original sentence, British IPA pronunciation, bilingual definitions with collocations, and a complete set of synonyms and antonyms. Perfect for students and lovers of classic literature exploring the language of passion, fate, and tragedy.">
+<meta name="theme-color" content="#06131a">
+<style>
+:root {
+  --bg:       #06131a;
+  --panel:    #0b1b24;
+  --panel2:   #0e2230;
+  --stroke:   #7ad0e0;
+  --text:     #e7fbff;
+  --muted:    #9fd6df;
+  --muted2:   #4a6e78;
+  --bad:      #ff5c7a;
+  --good:     #6ef7c8;
+  --gold:     #f0c040;
+  --gold2:    #ffe080;
+  --s35:      rgba(122,208,224,.35);
+  --s60:      rgba(122,208,224,.60);
+  --s20:      rgba(122,208,224,.20);
+  --o15:      rgba(0,0,0,.15);
+  --o25:      rgba(0,0,0,.25);
+  --panel-a:  rgba(11,27,36,.90);
+  --good15:   rgba(110,247,200,.15);
+  --good60:   rgba(110,247,200,.60);
+  --bad12:    rgba(255,92,122,.12);
+  --bad55:    rgba(255,92,122,.55);
+  --gold10:   rgba(240,192,64,.10);
+  --gold50:   rgba(240,192,64,.50);
+}
+*, *::before, *::after { box-sizing: border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: radial-gradient(900px 600px at 50% 0%, var(--panel2) 0%, var(--bg) 65%);
+  color: var(--text);
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+button { font-family: inherit; color: var(--text); cursor: pointer; }
+.wrapper { max-width: 680px; margin: 0 auto; padding: 0 14px; }
+.app-header {
+  text-align: center;
+  padding: 32px 10px 22px;
+  border-bottom: 1px solid var(--s20);
+}
+.app-header h1 {
+  font-family: Georgia, 'Times New Roman', 'Songti SC', serif;
+  font-size: clamp(2rem, 7vw, 2.8rem);
+  font-weight: 700;
+  color: var(--good);
+  letter-spacing: .01em;
+  text-shadow: 0 0 30px rgba(110,247,200,.25);
+  line-height: 1.15;
+}
+.app-header .tagline {
+  margin-top: 8px;
+  font-size: clamp(0.85rem, 3vw, 1rem);
+  color: var(--muted);
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+.app-header .book-credit {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: var(--muted2);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.header-star-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.header-badge {
+  background: var(--panel-a);
+  border: 1px solid var(--s35);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.header-badge:hover { background: rgba(122,208,224,.08); border-color: var(--s60); }
+.header-badge.active { background: var(--good15); border-color: var(--good60); color: var(--good); }
+.group-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 18px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 16px;
+  padding: 10px 14px;
+}
+.group-nav-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+}
+.group-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted2);
+  font-weight: 700;
+}
+.group-num {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--good);
+  letter-spacing: .02em;
+}
+.group-dots {
+  display: flex;
+  gap: 5px;
+  margin-top: 3px;
+}
+.group-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--muted2);
+  transition: background .2s, transform .2s;
+}
+.group-dot.active { background: var(--good); transform: scale(1.3); }
+.group-dot.done { background: var(--s60); }
+.nav-pill {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--muted);
+  transition: all .15s;
+  white-space: nowrap;
+}
+.nav-pill:hover:not(:disabled) { background: rgba(122,208,224,.15); border-color: var(--s60); color: var(--text); }
+.nav-pill:disabled { opacity: .35; pointer-events: none; }
+.word-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 0 2px;
+}
+.word-nav-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  justify-content: center;
+}
+.word-counter {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+.word-counter span { color: var(--text); }
+.icon-btn {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  transition: all .15s;
+  color: var(--muted);
+}
+.icon-btn:hover { background: rgba(122,208,224,.15); border-color: var(--s60); color: var(--text); }
+.icon-btn.starred { color: var(--gold); border-color: var(--gold50); background: var(--gold10); }
+.icon-btn:disabled { opacity: .3; pointer-events: none; }
+.word-card {
+  margin-top: 10px;
+  background: linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95));
+  border: 1px solid var(--s35);
+  border-radius: 22px;
+  overflow: hidden;
+  transition: border-color .2s;
+}
+.word-card-top {
+  padding: 20px 20px 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid var(--s20);
+}
+.word-left { display: flex; flex-direction: column; gap: 4px; }
+.word-display {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: clamp(1.7rem, 6vw, 2.2rem);
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: .02em;
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(240,192,64,.2);
+}
+.pron-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.pron-text {
+  font-size: 1.1rem;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: .03em;
+}
+.speak-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  transition: all .15s;
+}
+.speak-btn:hover { background: rgba(110,247,200,.25); }
+.chapter-badge {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 8px;
+  padding: 4px 9px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+.definition-block {
+  padding: 14px 20px 16px;
+  border-bottom: 1px solid var(--s20);
+}
+.def-en {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(231,251,255,.9);
+}
+.def-zh {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-top: 4px;
+  font-weight: 500;
+}
+.sentence-tab-row {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--s20);
+}
+.sent-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted2);
+  transition: all .15s;
+  text-align: center;
+}
+.sent-tab:hover { color: var(--muted); background: rgba(122,208,224,.04); }
+.sent-tab.active {
+  color: var(--good);
+  border-bottom-color: var(--good);
+  background: rgba(110,247,200,.04);
+}
+.sentence-content {
+  padding: 18px 20px 20px;
+}
+.sent-en {
+  font-family: Georgia, 'Times New Roman', 'Songti SC', serif;
+  font-size: clamp(1.08rem, 3.5vw, 1.18rem);
+  line-height: 1.85;
+  color: rgba(231,251,255,.88);
+  font-style: italic;
+}
+.sent-zh {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-top: 12px;
+  font-weight: 400;
+  padding-top: 12px;
+  border-top: 1px solid var(--s20);
+}
+.sent-en .hl {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--gold2);
+  background: rgba(240,192,64,.08);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.sent-source {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  color: var(--muted2);
+  text-align: right;
+  letter-spacing: .04em;
+}
+.quiz-phase-label {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted2);
+  margin-bottom: 10px;
+}
+.quiz-section {
+  margin-top: 14px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s;
+}
+.quiz-header:hover { background: rgba(122,208,224,.05); }
+.quiz-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.quiz-title {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--text);
+}
+.quiz-subtitle {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  margin-top: 1px;
+}
+.quiz-score-badge {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  display: none;
+}
+.quiz-toggle-icon { font-size: 0.85rem; color: var(--muted2); transition: transform .2s; }
+.quiz-toggle-icon.open { transform: rotate(180deg); }
+.quiz-body {
+  display: none;
+  padding: 0 18px 18px;
+  border-top: 1px solid var(--s20);
+}
+.quiz-body.open { display: block; }
+.quiz-progress-bar {
+  height: 4px;
+  background: rgba(122,208,224,.12);
+  border-radius: 999px;
+  margin: 14px 0 16px;
+  overflow: hidden;
+}
+.quiz-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--good), #4edfc9);
+  border-radius: 999px;
+  transition: width .3s ease;
+}
+.quiz-q-num {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 10px;
+}
+.quiz-sentence {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: clamp(1.05rem, 3vw, 1.15rem);
+  line-height: 1.8;
+  color: rgba(231,251,255,.9);
+  background: rgba(122,208,224,.05);
+  border: 1px solid var(--s20);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+.blank { color: var(--gold); font-style: normal; font-weight: 700; letter-spacing: .1em; }
+.quiz-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.choice-btn {
+  background: rgba(122,208,224,.06);
+  border: 1px solid var(--s35);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: left;
+  transition: all .15s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.choice-btn:hover:not(:disabled) { background: rgba(122,208,224,.12); border-color: var(--s60); }
+.choice-btn .choice-label {
+  background: var(--s35);
+  border-radius: 4px;
+  width: 20px; height: 20px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+.choice-btn.correct { background: var(--good15); border-color: var(--good60); color: var(--good); }
+.choice-btn.wrong   { background: var(--bad12);  border-color: var(--bad55);  color: var(--bad); }
+.choice-btn:disabled { pointer-events: none; opacity: .7; }
+.quiz-feedback {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: none;
+}
+.quiz-feedback.correct-fb { background: var(--good15); color: var(--good); border: 1px solid var(--good60); }
+.quiz-feedback.wrong-fb   { background: var(--bad12);  color: var(--bad);  border: 1px solid var(--bad55); }
+.quiz-next-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text);
+  display: none;
+  transition: background .15s;
+}
+.quiz-next-btn:hover { background: rgba(122,208,224,.18); }
+.quiz-result {
+  display: none;
+  text-align: center;
+  padding: 16px 0 4px;
+}
+.quiz-result-score {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--good);
+  line-height: 1;
+}
+.quiz-result-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 4px;
+  margin-bottom: 14px;
+}
+.quiz-result-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.quiz-retry-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--good);
+  transition: background .15s;
+}
+.quiz-retry-btn:hover { background: rgba(110,247,200,.25); }
+.quiz-start-area {
+  padding: 16px 0 4px;
+  text-align: center;
+}
+.quiz-start-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+.quiz-start-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 10px 28px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--good);
+  transition: background .15s;
+}
+.quiz-start-btn:hover { background: rgba(110,247,200,.25); }
+.quiz-skip-btn {
+  background: none;
+  border: none;
+  color: var(--muted2);
+  font-size: 0.78rem;
+  margin-left: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.starred-section {
+  margin-top: 14px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.starred-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s;
+}
+.starred-header:hover { background: rgba(240,192,64,.04); }
+.starred-header-left { display: flex; align-items: center; gap: 10px; }
+.starred-title { font-size: 0.9rem; font-weight: 800; color: var(--text); }
+.starred-count {
+  background: var(--gold10);
+  border: 1px solid var(--gold50);
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+.starred-body { display: none; padding: 0 18px 18px; border-top: 1px solid var(--s20); }
+.starred-body.open { display: block; }
+.starred-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 14px;
+}
+.starred-chip {
+  background: var(--gold10);
+  border: 1px solid var(--gold50);
+  border-radius: 999px;
+  padding: 5px 13px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold);
+  cursor: pointer;
+  transition: all .15s;
+}
+.starred-chip:hover { background: rgba(240,192,64,.18); }
+.starred-empty {
+  padding-top: 14px;
+  font-size: 0.85rem;
+  color: var(--muted2);
+  font-style: italic;
+  text-align: center;
+}
+.my-sentences-block {
+  padding: 16px 20px 18px;
+  border-top: 1px solid var(--s20);
+}
+.my-sent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.my-sent-title {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--muted);
+  letter-spacing: .02em;
+}
+.my-sent-counter {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--muted2);
+  background: var(--o25);
+  border: 1px solid var(--s20);
+  border-radius: 999px;
+  padding: 2px 9px;
+}
+.my-sent-counter.full { color: var(--gold); border-color: var(--gold50); background: var(--gold10); }
+.my-sent-input-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+.my-sent-input {
+  flex: 1;
+  background: rgba(122,208,224,.06);
+  border: 1px solid var(--s35);
+  border-radius: 12px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.88rem;
+  padding: 9px 13px;
+  outline: none;
+  transition: border-color .15s;
+  min-width: 0;
+}
+.my-sent-input:focus { border-color: var(--s60); background: rgba(122,208,224,.09); }
+.my-sent-input::placeholder { color: var(--muted2); }
+.my-sent-save-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 12px;
+  padding: 9px 16px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--stroke);
+  white-space: nowrap;
+  transition: background .15s;
+  flex-shrink: 0;
+}
+.my-sent-save-btn:hover { background: rgba(122,208,224,.2); }
+.my-sent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 10px;
+}
+.my-sent-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(122,208,224,.05);
+  border: 1px solid var(--s20);
+  border-radius: 10px;
+  padding: 9px 12px;
+}
+.my-sent-num {
+  font-size: 0.68rem;
+  font-weight: 900;
+  color: var(--muted2);
+  background: var(--s20);
+  border-radius: 4px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.my-sent-text {
+  flex: 1;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(231,251,255,.85);
+}
+.my-sent-del {
+  background: none;
+  border: none;
+  color: var(--muted2);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 3px;
+  flex-shrink: 0;
+  opacity: .6;
+  transition: color .15s, opacity .15s;
+}
+.my-sent-del:hover { color: var(--bad); opacity: 1; }
+.starred-quiz-divider {
+  height: 1px;
+  background: var(--s20);
+  margin: 14px 0;
+}
+.sq-start-area { text-align: center; padding-bottom: 4px; }
+.sq-desc {
+  font-size: 0.82rem;
+  color: var(--muted2);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+.sq-unlock-hint {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  font-style: italic;
+}
+footer {
+  margin-top: 36px;
+  padding: 20px 14px 28px;
+  border-top: 1px solid var(--s20);
+  text-align: center;
+}
+.footer-author {
+  font-size: 0.8rem;
+  color: var(--muted2);
+  line-height: 1.9;
+}
+.footer-author a { color: var(--muted); text-decoration: none; }
+.footer-author a:hover { color: var(--stroke); }
+.footer-quote {
+  margin-top: 12px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--muted2);
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+#toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: rgba(11,27,36,.96);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s, transform .2s;
+  white-space: nowrap;
+  z-index: 9999;
+}
+#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+#toast.gold { border-color: var(--gold50); color: var(--gold); }
+#toast.good { border-color: var(--good60); color: var(--good); }
+@media (max-width: 480px) {
+  .word-card-top { flex-wrap: wrap; }
+  .quiz-choices { grid-template-columns: 1fr; }
+  .group-dots { display: none; }
+  .nav-pill { padding: 7px 12px; font-size: 0.8rem; }
+}
+.synan-block {
+  padding: 10px 20px 14px;
+  border-bottom: 1px solid var(--s20);
+  display: flex; gap: 14px; flex-wrap: wrap;
+}
+.synan-group { flex: 1; min-width: 0; }
+.synan-label {
+  font-size: 0.65rem; font-weight: 900; text-transform: uppercase;
+  letter-spacing: .1em; margin-bottom: 5px;
+}
+.synan-label.syn { color: var(--good); }
+.synan-label.ant { color: var(--bad); }
+.synan-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.synan-chip {
+  font-size: 0.75rem; font-weight: 600; padding: 3px 9px;
+  border-radius: 999px;
+}
+.synan-chip.syn { background: rgba(110,247,200,.1); border: 1px solid rgba(110,247,200,.35); color: var(--good); }
+.synan-chip.ant { background: rgba(255,92,122,.08); border: 1px solid rgba(255,92,122,.3);  color: var(--bad); }
+.spell-content { padding: 18px 20px 22px; }
+.spell-sentence {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: clamp(1.08rem, 3.5vw, 1.18rem);
+  line-height: 1.85;
+  color: rgba(231,251,255,.88);
+  margin-bottom: 18px;
+}
+.spell-sentence .hl { font-style: normal; font-weight: 700; color: var(--gold2); }
+.spell-boxes {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  justify-content: center; margin-bottom: 18px;
+}
+.spell-box {
+  width: 40px; height: 46px;
+  border: 2px solid var(--s35);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; font-weight: 800; text-transform: lowercase;
+  background: rgba(122,208,224,.05);
+  transition: border-color .15s, background .15s;
+  flex-shrink: 0;
+}
+.spell-box.filled   { border-color: var(--s60); background: rgba(122,208,224,.1); color: var(--text); }
+.spell-box.correct  { border-color: var(--good); background: rgba(110,247,200,.15); color: var(--good); }
+.spell-box.wrong    { border-color: var(--bad);  background: rgba(255,92,122,.12);  color: var(--bad); }
+.spell-box.cursor   { border-color: var(--gold); animation: spell-blink .9s ease infinite; }
+@keyframes spell-blink { 0%,100% { border-color: var(--gold); } 50% { border-color: transparent; } }
+.spell-input-row {
+  display: flex; gap: 8px; align-items: center; justify-content: center; flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.spell-input {
+  background: rgba(122,208,224,.06); border: 1px solid var(--s35);
+  border-radius: 12px; color: var(--text); font-family: inherit;
+  font-size: 1rem; font-weight: 700; padding: 9px 14px; outline: none;
+  width: 180px; text-align: center; letter-spacing: .12em;
+  transition: border-color .15s;
+}
+.spell-input:focus { border-color: var(--s60); }
+.spell-input::placeholder { color: var(--muted2); font-weight: 400; letter-spacing: 0; }
+.spell-check-btn {
+  background: var(--good15); border: 1px solid var(--good60);
+  border-radius: 12px; padding: 9px 18px;
+  font-size: .88rem; font-weight: 800; color: var(--good);
+  transition: background .15s;
+}
+.spell-check-btn:hover { background: rgba(110,247,200,.25); }
+.spell-reveal-btn {
+  background: none; border: none; color: var(--muted2);
+  font-size: .78rem; text-decoration: underline; cursor: pointer;
+  display: block; text-align: center; margin-top: 4px;
+}
+.spell-feedback {
+  text-align: center; font-size: .9rem; font-weight: 800;
+  padding: 10px; border-radius: 10px; margin-top: 4px; display: none;
+}
+.spell-feedback.ok  { background: var(--good15); color: var(--good); border: 1px solid var(--good60); }
+.spell-feedback.err { background: var(--bad12);  color: var(--bad);  border: 1px solid var(--bad55); }
+.spell-hint-row { text-align: center; margin-bottom: 10px; }
+.spell-hint-text { font-size: .78rem; color: var(--muted2); font-style: italic; }
+
+/* ── Print button ─────────────────────────────────────── */
+.print-btn { margin-left: 8px; }
+.header-star-row { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 8px; }
+
+/* ── Print styles ─────────────────────────────────────── */
+@media print {
+  body * { visibility: hidden; }
+  #printContainer, #printContainer * { visibility: visible; }
+  #printContainer { display: block !important; position: absolute; inset: 0; background: white; }
+}
+
+
+.flashcard-container {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+.flashcard-container.active {
+  display: block;
+}
+.flashcard-flip {
+  perspective: 1000px;
+  margin-bottom: 24px;
+}
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+  background: linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95));
+  border: 1px solid rgba(122,208,224,.3);
+  border-radius: 18px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s ease;
+  transform-style: preserve-3d;
+}
+.flashcard-inner:hover {
+  border-color: rgba(122,208,224,.6);
+  background: linear-gradient(160deg, rgba(14,34,48,.9), rgba(11,27,36,1));
+}
+.flashcard-label {
+  font-size: 0.72rem;
+  color: var(--muted2);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.flashcard-content {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--good);
+  line-height: 1.6;
+  text-shadow: 0 0 20px rgba(110,247,200,.15);
+}
+.flashcard-word-main {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--good);
+  margin-bottom: 8px;
+  text-shadow: 0 0 20px rgba(110,247,200,.15);
+}
+.flashcard-pron {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 500;
+  font-style: italic;
+  margin: 6px 0;
+}
+.flashcard-pos-display {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #6ef7c8;
+  background: rgba(110, 247, 200, 0.1);
+  border: 1px solid rgba(110, 247, 200, 0.3);
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 6px 0;
+  min-height: 20px;
+}
+.flashcard-hear {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  cursor: pointer;
+  transition: all .15s;
+  margin-left: 8px;
+  display: inline-block;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: rgba(110, 247, 200, 0.15);
+  border: 1px solid rgba(110, 247, 200, 0.4);
+  color: #6ef7c8;
+  margin: 0 4px;
+}
+.badge-pos {
+  display: inline-block !important;
+  background: rgba(110, 247, 200, 0.15) !important;
+  border: 1px solid rgba(110, 247, 200, 0.4) !important;
+  color: #6ef7c8 !important;
+  padding: 4px 10px !important;
+  border-radius: 999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  margin: 0 4px !important;
+}
+.flashcard-hear:hover {
+  background: var(--good25);
+  border-color: var(--good);
+}
+.flashcard-pos {
+  display: inline-block;
+  background: rgba(122,208,224,.15);
+  border: 1px solid rgba(122,208,224,.4);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin-right: 8px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.flashcard-def-en {
+  font-size: 1.1rem;
+  color: rgba(231,251,255,.9);
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+.flashcard-def-zh {
+  font-size: 1.05rem;
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1.7;
+}
+.flashcard-hint {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  margin-top: 12px;
+  font-style: italic;
+}
+.flashcard-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.flashcard-progress {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 700;
+  min-width: 60px;
+}
+.flashcard-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text);
+  cursor: pointer;
+  transition: all .15s;
+}
+.flashcard-btn:hover:not(:disabled) {
+  background: rgba(122,208,224,.2);
+  border-color: var(--s60);
+}
+.flashcard-btn:disabled {
+  opacity: .35;
+  cursor: not-allowed;
+}
+
+</style>
+</head>
+<body>
+
+<div id="toast"></div>
+
+<div class="wrapper">
+  <div class="app-header">
+    <h1>Words That Think: Romeo and Juliet Edition</h1>
+    <div class="tagline">Learn 75 words from the greatest love story ever told — a tragedy of star-crossed lovers and ancient grudges.</div>
+    <div class="book-credit">76 words &middot; 76 sentences &middot; William Shakespeare's Romeo and Juliet</div>
+    <div class="header-star-row">
+      <button class="header-badge" id="starredToggleBtn">⭐ Starred Words (<span id="starredCountHeader">0</span>)</button>
+      <button class="header-badge print-btn" id="printBtn" onclick="openPrintModal()">🖨️ Print</button>
+    </div>
+  </div>
+
+  <div class="group-nav">
+    <button class="nav-pill" id="prevGroupBtn">← Prev</button>
+    <div class="group-nav-center">
+      <div class="group-label">Group</div>
+      <div class="group-num" id="groupNumDisplay">1 / 10</div>
+      <div class="group-dots" id="groupDots"></div>
+    </div>
+    <button class="nav-pill" id="nextGroupBtn">Next →</button>
+  </div>
+
+  <div class="word-nav">
+    <button class="nav-pill" id="prevWordBtn">←</button>
+    <div class="word-nav-center">
+      <div class="word-counter">Word <span id="wordNumDisplay">1</span> / <span id="groupSizeDisplay">10</span></div>
+      <button class="icon-btn" id="starBtn" title="Star this word">☆</button>
+      <button class="icon-btn" id="speakBtn" title="Hear pronunciation">🔊</button>
+    </div>
+    <button class="nav-pill" id="nextWordBtn">Next →</button>
+  </div>
+
+  <div class="word-card" id="wordCard">
+    <div class="word-card-top">
+      <div class="word-left">
+        <div class="word-display" id="wordDisplay">—</div>
+        <div class="pron-row">
+          <span class="pron-text" id="pronDisplay">—</span>
+          <button class="speak-btn" id="speakBtn2">🔊 Hear it</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="definition-block">
+      <div class="def-en" id="defEn">—</div>
+      <div class="def-zh" id="defZh">—</div>
+    </div>
+
+    <div class="synan-block" id="synanBlock">
+      <div class="synan-group">
+        <div class="synan-label syn">Synonyms</div>
+        <div class="synan-chips" id="synChips"></div>
+      </div>
+      <div class="synan-group">
+        <div class="synan-label ant">Antonyms</div>
+        <div class="synan-chips" id="antChips"></div>
+      </div>
+    </div>
+
+    <div class="sentence-tab-row">
+      <button class="sent-tab active" id="tabNovel">📖 Source Sentence</button>
+      <button class="sent-tab" id="tabAI">💡 Example</button>
+      <button class="sent-tab" id="tabFlashcard">📇 Flashcard</button>
+    </div>
+
+    <div class="sentence-content" id="sentenceContent">
+      <div style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px;">
+        <div class="sent-en" id="sentEn" style="flex: 1;">—</div>
+        <button id="sentenceHearBtn" style="flex-shrink: 0; padding: 8px 14px; background: rgba(122,208,224,.12); border: 1.5px solid rgba(122,208,224,.4); border-radius: 8px; color: #7AD0E0; cursor: pointer; font-weight: 600; white-space: nowrap; font-size: 0.85rem;" onclick="const e=document.getElementById(\'sentEn\');if(e){let t=e.textContent;if(t&&t!==\'—\'){t=t.replace(/<[^>]*>/g,\'\');if(t.trim())speak(t);}}">🔊 Hear</button>
+      </div>
+      <div class="sent-zh" id="sentZh">—</div>
+      <div class="sent-source" id="sentSource">—</div>
+    </div>
+
+    <div class="flashcard-container" id="flashcardContainer">
+      <div class="flashcard-nav">
+        <button class="flashcard-btn" id="flashPrevBtn" title="Previous card">← Prev</button>
+        <div class="flashcard-progress" id="flashProgress">1 / 10</div>
+        <button class="flashcard-btn" id="flashNextBtn" title="Next card">Next →</button>
+      </div>
+      <div class="flashcard-flip" id="flashFlip">
+        <div class="flashcard-inner" id="flashInner" onclick="toggleFlashcard()">
+          <div class="flashcard-label" id="flashLabel">Word</div>
+          <div class="flashcard-content" id="flashContent">—</div>
+          <div class="flashcard-hint">Tap to reveal</div>
+        </div>
+      </div>
+      <button class="icon-btn" id="flashStarBtn" title="Star this word" style="margin-bottom: 14px;">⭐</button>
+    </div>
+
+    <div class="my-sentences-block">
+      <div class="my-sent-header">
+        <span class="my-sent-title">✍️ My Sentences</span>
+        <span class="my-sent-counter" id="mySentCounter">0 / 3</span>
+      </div>
+      <div class="my-sent-input-row">
+        <input type="text" class="my-sent-input" id="mySentInput"
+          placeholder="Write your own sentence using this word…"
+          autocomplete="off" autocorrect="off" spellcheck="false">
+        <button class="my-sent-save-btn" id="mySentSaveBtn">Save</button>
+      </div>
+      <div class="my-sent-list" id="mySentList"></div>
+    </div>
+  </div>
+
+  <div class="quiz-section" id="quizSection">
+    <div class="quiz-header" id="quizHeader">
+      <div class="quiz-header-left">
+        <div>
+          <div class="quiz-title">📝 Group Quiz</div>
+          <div class="quiz-subtitle" id="quizSubtitle">Part 1: Choose · Part 2: Spell</div>
+        </div>
+        <div class="quiz-score-badge" id="quizScoreBadge">—</div>
+      </div>
+      <div>
+        <span class="quiz-toggle-icon" id="quizToggleIcon">▾</span>
+      </div>
+    </div>
+    <div class="quiz-body" id="quizBody">
+      <div class="quiz-start-area" id="quizStartArea">
+        <div class="quiz-start-desc" id="quizStartDesc">Test yourself on Group 1. Fill in the blanks using words from this group.</div>
+        <button class="quiz-start-btn" id="quizStartBtn">Start Quiz</button>
+        <button class="quiz-skip-btn" id="quizSkipBtn">Skip</button>
+      </div>
+      <div id="quizQuestionArea" style="display:none;">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+        <div class="quiz-q-num" id="quizQNum">Question 1 / 10</div>
+
+        <div id="quizPhase1">
+          <div class="quiz-phase-label">📖 Choose the word</div>
+          <div class="quiz-sentence" id="quizSentence">—</div>
+          <div class="quiz-choices" id="quizChoices"></div>
+          <div class="quiz-feedback" id="quizFeedback"></div>
+        </div>
+
+        <div id="quizPhase2" style="display:none;">
+          <div class="quiz-phase-label">💡 Spell the word — AI example sentence</div>
+          <div class="quiz-sentence" id="qSpellSentence">—</div>
+          <div class="spell-boxes" id="qSpellBoxes"></div>
+          <div class="spell-input-row">
+            <input type="text" class="spell-input" id="qSpellInput"
+              placeholder="type the word…"
+              autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <button class="spell-check-btn" id="qSpellCheckBtn">Check</button>
+          </div>
+          <button class="spell-reveal-btn" id="qSpellRevealBtn">Show answer</button>
+          <div class="quiz-feedback" id="qSpellFeedback"></div>
+        </div>
+
+        <button class="quiz-next-btn" id="quizNextBtn" style="display:none;">Next →</button>
+      </div>
+      <div class="quiz-result" id="quizResult">
+        <div class="quiz-result-score" id="quizResultScore">—</div>
+        <div class="quiz-result-label" id="quizResultLabel">—</div>
+        <div class="quiz-result-btns">
+          <button class="quiz-retry-btn" id="quizRetryBtn">↻ Retry Quiz</button>
+          <button class="quiz-skip-btn" id="quizCloseBtn">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="starred-section" id="starredSection">
+    <div class="starred-header" id="starredHeader">
+      <div class="starred-header-left">
+        <div class="starred-title">⭐ Starred Words</div>
+        <div class="starred-count" id="starredCount">0</div>
+      </div>
+      <span class="quiz-toggle-icon" id="starredToggleIcon">▾</span>
+    </div>
+    <div class="starred-body" id="starredBody">
+      <div class="starred-list" id="starredList"></div>
+
+      <div class="starred-quiz-wrap" id="starredQuizWrap">
+        <div class="starred-quiz-divider"></div>
+        <div class="sq-start-area" id="sqStartArea">
+          <div class="sq-desc" id="sqDesc">Star 5 or more words to unlock your personal quiz.</div>
+          <button class="quiz-start-btn" id="sqStartBtn" style="display:none;">⭐ Quiz My Starred Words</button>
+          <div class="sq-unlock-hint" id="sqUnlockHint">(<span id="sqStarredCount">0</span> / 5 starred so far)</div>
+        </div>
+        <div id="sqQuestionArea" style="display:none;">
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="sqProgressFill"></div></div>
+          <div class="quiz-q-num" id="sqQNum">Question 1 / ?</div>
+          <div class="quiz-sentence" id="sqSentence">—</div>
+          <div class="quiz-choices" id="sqChoices"></div>
+          <div class="quiz-feedback" id="sqFeedback"></div>
+          <button class="quiz-next-btn" id="sqNextBtn">Next →</button>
+        </div>
+        <div class="quiz-result" id="sqResult" style="display:none;">
+          <div class="quiz-result-score" id="sqResultScore">—</div>
+          <div class="quiz-result-label" id="sqResultLabel">—</div>
+          <div class="quiz-result-btns">
+            <button class="quiz-retry-btn" id="sqRetryBtn">↻ Retry</button>
+            <button class="quiz-skip-btn" id="sqResetBtn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-author">Created by Daniel Wang (dwang055@gmail.com) for educational use · Words from Romeo and Juliet (1597) by William Shakespeare · Public Domain</div>
+    <div class="footer-quote">“For never was a story of more woe than this of Juliet and her Romeo.”<br>Prince, Romeo and Juliet (Act 5 Scene 3)</div>
+  </footer>
+</div>
+
+<script>
+// ============================================================
+// PASTE YOUR COMPLETE VOCAB ARRAY HERE (ALL 100 WORDS)
+// ============================================================
+// ============================================================
+const BOOK_CONFIG = {
+  "title": "Words That Think: Romeo and Juliet Edition",
+  "bookName": "Romeo and Juliet",
+  "author": "William Shakespeare",
+  "year": "1597",
+  "tagline": "Learn 75 words from the greatest love story ever told — a tragedy of star-crossed lovers and ancient grudges."
+};
+const VOCAB = [
+  {
+    "word": "word",
+    "pron": "pronunciation",
+    "def_en": "English definition (with collocations)",
+    "def_zh": "Chinese definition (with collocations)",
+    "quote_en": "example1_en",
+    "quote_zh": "example1_zh",
+    "ex_en": "example2_en",
+    "ex_zh": "example2_zh",
+    "part_of_speech": "part of speech"
+  },
+  {
+    "word": "pernicious",
+    "pron": "pəˈnɪʃəs",
+    "def_en": "having a harmful effect, especially in a gradual or subtle way (pernicious influence, pernicious habit)",
+    "def_zh": "有害的，恶性的（有害影响，恶性习惯）",
+    "quote_en": "\"Will they not hear? What, ho! you men, you beasts, That quench the fire of your pernicious rage With purple fountains issuing from your veins, On pain of torture, from those bloody hands Throw your mistemper'd weapons to the ground.\" – The Prince of Verona, furious at the Capulets and Montagues for their third public brawl, threatening torture if they do not drop their swords (Act 1 Scene 1)",
+    "quote_zh": "\"他们不听吗？喂，你们这些人，你们这些野兽，用从你们血管里流出的紫色泉水来熄灭你们那有害的怒火！以酷刑相威胁，把你们那暴躁的武器从那些沾满鲜血的手中扔到地上。\"",
+    "ex_en": "The pernicious feud between the Montagues and Capulets ultimately destroys both families.",
+    "ex_zh": "蒙太古家和凯普莱特家之间的恶性世仇最终毁灭了两个家族。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "covert",
+    "pron": "ˈkʌvət",
+    "def_en": "not openly acknowledged or displayed (covert operation, covert surveillance)",
+    "def_zh": "隐蔽的，秘密的（秘密行动，隐蔽监视）",
+    "quote_en": "\"So early walking did I see your son: Towards him I made, but he was ware of me And stole into the covert of the wood: I, measuring his affections by my own, That most are busied when they're most alone, Pursued my humour not pursuing his, And gladly shunn'd who gladly fled from me.\" – Benvolio explaining to Montague that he saw Romeo walking in the sycamore grove, but Romeo noticed him and hid himself in the wooded cover (Act 1 Scene 1)",
+    "quote_zh": "\"清晨散步时我看到了您的儿子：我朝他走去，但他察觉到了我，就偷偷溜进了树林的隐蔽处。我用自己的性情来揣度他的情感——人最孤独时往往最忙碌——我没有追他，而是顺其自然，也 gladly 避开了那个 gladly 躲避我的人。\"",
+    "ex_en": "Romeo and Juliet’s covert marriage is known only to Friar Laurence and the Nurse.",
+    "ex_zh": "罗密欧与朱丽叶的秘密婚姻只有劳伦斯神父和奶妈知道。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "portentous",
+    "pron": "pɔːˈtentəs",
+    "def_en": "of or like a portent; ominously significant (portentous sign, portentous warning)",
+    "def_zh": "不祥的，预兆性的（不祥之兆，预兆性警告）",
+    "quote_en": "\"But all so soon as the all-cheering sun Should in the furthest east begin to draw The shady curtains from Aurora's bed, Away from the light steals home my heavy son, And private in his chamber pens himself, Shuts up his windows, locks far daylight out And makes himself an artificial night: Black and portentous must this humour prove, Unless good counsel may the cause remove.\" – Montague expressing his worry to Benvolio about Romeo’s melancholy behaviour, fearing it will lead to something ominously bad if not resolved (Act 1 Scene 1)",
+    "quote_zh": "\"但是每当那令人振奋的太阳开始从最远的东方拉开奥罗拉床上的朦胧窗帘时，我那忧郁的儿子就悄悄地从光中溜回家，把自己关在房间里，关上窗户，锁住白昼，为自己制造了一个人工的黑夜。这种情绪必定是黑暗而不祥的，除非好的劝告能消除其原因。\"",
+    "ex_en": "The portentous dream Romeo has before the Capulet feast foreshadows his untimely death.",
+    "ex_zh": "罗密欧在凯普莱特家宴会前所做的不祥之梦预示了他的早逝。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "importune",
+    "pron": "ˌɪmpɔːˈtjuːn",
+    "def_en": "to harass or urge persistently (importune for money, importune a favour)",
+    "def_zh": "纠缠，强求（纠缠要钱，强求恩惠）",
+    "quote_en": "\"MONTAGUE: I neither know it nor can learn of him. BENVOLIO: Have you importuned him by any means? MONTAGUE: Both by myself and many other friends.\" – Montague telling Benvolio that he and others have persistently questioned Romeo to find the cause of his sadness, but Romeo refuses to reveal it (Act 1 Scene 1)",
+    "quote_zh": "\"蒙太古：我不知道，也无法从他那里得知。班伏里奥：你们有没有用什么办法去追问过他？蒙太古：我自己和许多其他朋友都试过了。\"",
+    "ex_en": "Juliet importunes the Nurse to reveal Romeo’s message, desperate for news of their wedding.",
+    "ex_zh": "朱丽叶纠缠奶妈让她说出罗密欧的口信，急切地想知道他们婚礼的消息。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "propagate",
+    "pron": "ˈprɒpəɡeɪt",
+    "def_en": "to spread and promote (an idea, theory, etc.) widely (propagate rumours, propagate beliefs)",
+    "def_zh": "传播，宣传（传播谣言，宣传信仰）",
+    "quote_en": "\"Griefs of mine own lie heavy in my breast, Which thou wilt propagate, to have it prest With more of thine: this love that thou hast shown Doth add more grief to too much of mine own.\" – Romeo telling Benvolio that Benvolio’s sympathy will only spread and increase Romeo’s own sorrows by adding more grief to his already heavy heart (Act 1 Scene 1)",
+    "quote_zh": "\"我自己的悲伤重重地压在心里，而你会把它传播开，用更多的悲伤来挤压它：你所表现出的这份爱只会给我已经太多的悲伤再添更多的悲伤。\"",
+    "ex_en": "The hatred between the two houses propagates violence through the streets of Verona.",
+    "ex_zh": "两个家族之间的仇恨在维罗纳的街道上传播着暴力。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "forswear",
+    "pron": "fɔːˈsweə",
+    "def_en": "to agree to give up or renounce (forswear allegiance, forswear bad habits)",
+    "def_zh": "发誓放弃，弃绝（发誓放弃效忠，戒除坏习惯）",
+    "quote_en": "\"She is too fair, too wise, wisely too fair, To merit bliss by making me despair: She hath forsworn to love, and in that vow Do I live dead that live to tell it now.\" – Romeo lamenting to Benvolio that Rosaline has sworn never to love anyone, leaving him alive but emotionally dead (Act 1 Scene 1)",
+    "quote_zh": "\"她太美丽、太聪明、聪明得太过美丽，不会让我绝望而因此得到幸福：她已经发誓不再恋爱，守着那个誓言，我虽生犹死，活着却只能诉说这一切。\"",
+    "ex_en": "Romeo forswears his infatuation with Rosaline the moment he sees Juliet at the feast.",
+    "ex_zh": "罗密欧在宴会上见到朱丽叶的那一刻就发誓放弃了对罗瑟琳的迷恋。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "lineament",
+    "pron": "ˈlɪniəmənt",
+    "def_en": "a distinctive feature or characteristic, especially of the face (facial lineaments, sharp lineaments)",
+    "def_zh": "面容特征，轮廓（面部轮廓，鲜明的特征）",
+    "quote_en": "\"Read o'er the volume of young Paris' face, And find delight writ there with beauty's pen; Examine every married lineament, And see how one another lends content.\" – Lady Capulet advising Juliet to study Paris’s facial features as if reading a book, noting how each feature harmoniously complements the others (Act 1 Scene 3)",
+    "quote_zh": "\"仔细阅读年轻帕里斯脸庞的书卷，你会发现美之笔写下的欢愉；审视每一处相称的面容线条，看它们如何彼此映衬、相互满足。\"",
+    "ex_en": "Juliet’s perfect lineaments are compared to a rich jewel in an Ethiop’s ear.",
+    "ex_zh": "朱丽叶完美的面容被比作埃塞俄比亚人耳边的宝石。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "visage",
+    "pron": "ˈvɪzɪdʒ",
+    "def_en": "a person’s face, with reference to its expression (grim visage, angelic visage)",
+    "def_zh": "面容，脸色（冷酷的面容，天使般的面容）",
+    "quote_en": "\"Give me a case to put my visage in: A visor for a visor! what care I What curious eye doth quote deformities? Here are the beetle brows shall blush for me.\" – Mercutio, before the Capulet feast, asking for a mask to cover his face, saying he does not care who notices his supposed ugliness because the mask’s heavy brows will blush in his place (Act 1 Scene 4)",
+    "quote_zh": "\"给我一个装我面容的盒子：面具对面具！我才不在乎什么好奇的眼睛指出缺陷呢。这里有能替我脸红的浓眉。\"",
+    "ex_en": "Romeo hides his true visage behind a mask at the Capulet ball, but his heart is exposed.",
+    "ex_zh": "罗密欧在凯普莱特家的舞会上用面具掩盖真实面容，但他的心却暴露了。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "anon",
+    "pron": "əˈnɒn",
+    "def_en": "soon; shortly (see you anon, come again anon)",
+    "def_zh": "不久，马上（待会见，马上再来）",
+    "quote_en": "\"Sometime she driveth o'er a soldier's neck, And then dreams he of cutting foreign throats, Of breaches, ambuscadoes, Spanish blades, Of healths five-fathom deep; and then anon Drums in his ear, at which he starts and wakes, And being thus frightened swears a prayer or two And sleeps again.\" – Mercutio describing Queen Mab’s effect on a sleeping soldier, who soon after dreaming of fighting hears imaginary drums in his ear and wakes in fright (Act 1 Scene 4)",
+    "quote_zh": "\"有时她驶过士兵的脖子，然后他梦见砍外国人的喉咙，梦见城墙缺口、埋伏、西班牙长剑、五英寻深的一饮而尽；然后不久就在他耳边擂鼓，于是他惊跳起来醒来，被吓住了就念一两句祷告，又睡去。\"",
+    "ex_en": "Juliet calls “Anon, anon!” when her mother summons her, but her mind is already with Romeo.",
+    "ex_zh": "朱丽叶在母亲召唤时回应“来了，来了！”，但她的心早已飞到了罗密欧身边。",
+    "part_of_speech": "adverb"
+  },
+  {
+    "word": "bode",
+    "pron": "bəʊd",
+    "def_en": "to be an omen of a particular outcome (bode ill, bode well)",
+    "def_zh": "预兆，预示（预兆不祥，预示吉利）",
+    "quote_en": "\"This is that very Mab That plats the manes of horses in the night, And bakes the elfocks in foul sluttish hairs, Which once untangled, much misfortune bodes.\" – Mercutio continuing his Queen Mab speech, explaining that the fairy tangles the hair of slovenly people into elf-locks, and if those tangles are undone, it is an omen of great misfortune (Act 1 Scene 4)",
+    "quote_zh": "\"这就是那个马布，她在夜里编结马鬃，在邋遢的脏发里烘烤出乱发结，这些结一旦解开，就会招来大祸。\"",
+    "ex_en": "The lovers’ secret marriage bodes tragedy in the star-crossed world of Verona.",
+    "ex_zh": "在维罗纳这个命运多舛的世界里，恋人们的秘密婚姻预示着悲剧。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "revel",
+    "pron": "ˈrevl",
+    "def_en": "to take great pleasure in; lively festivities (revel in success, midnight revel)",
+    "def_zh": "狂欢，陶醉（沉醉于成功，午夜狂欢）",
+    "quote_en": "\"I fear, too early: for my mind misgives Some consequence yet hanging in the stars Shall bitterly begin his fearful date With this night's revels and expire the term Of a despised life closed in my breast By some vile forfeit of untimely death.\" – Romeo expressing his foreboding to his friends before entering the Capulet feast, saying that something fateful will start with this night’s festivities and lead to his early death (Act 1 Scene 4)",
+    "quote_zh": "\"我担心太早了：因为我的内心预感，某种悬在星辰间的结果将随着今晚的狂欢痛苦地开始它可怕的日子，并以某种卑鄙的早夭结束我这被鄙视的生命。\"",
+    "ex_en": "The Capulet revel is where Romeo first sees Juliet and forgets Rosaline completely.",
+    "ex_zh": "凯普莱特家的狂欢是罗密欧初次见到朱丽叶并彻底忘记罗瑟琳的地方。",
+    "part_of_speech": "n./v."
+  },
+  {
+    "word": "untimely",
+    "pron": "ʌnˈtaɪmli",
+    "def_en": "occurring before the expected time; premature (untimely death, untimely end)",
+    "def_zh": "过早的，不合时宜的（早逝，过早的结局）",
+    "quote_en": "\"I fear, too early: for my mind misgives Some consequence yet hanging in the stars Shall bitterly begin his fearful date With this night's revels and expire the term Of a despised life closed in my breast By some vile forfeit of untimely death.\" – Romeo’s ominous speech before the Capulet party, where he senses that the festivities will trigger a chain of events leading to his own premature death (Act 1 Scene 4)",
+    "quote_zh": "\"我担心太早了：因为我的内心预感，某种悬在星辰间的结果将随着今晚的狂欢痛苦地开始它可怕的日子，并以某种卑鄙的早夭结束我这被鄙视的生命。\"",
+    "ex_en": "The untimely demise of the young lovers finally ends the ancient grudge.",
+    "ex_zh": "这对年轻恋人过早的离世终于终结了古老的世仇。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "disparagement",
+    "pron": "dɪˈspærɪdʒmənt",
+    "def_en": "the act of speaking about someone negatively; belittlement (personal disparagement, public disparagement)",
+    "def_zh": "贬低，轻视（人身贬低，公开贬低）",
+    "quote_en": "\"Content thee, gentle coz, let him alone; He bears him like a portly gentleman; And, to say truth, Verona brags of him To be a virtuous and well-govern'd youth: I would not for the wealth of all the town Here in my house do him disparagement.\" – Capulet stopping Tybalt from confronting Romeo at the feast, insisting that Romeo is a respectable young man and that Capulet will not allow any insult or belittlement of Romeo inside his home (Act 1 Scene 5)",
+    "quote_zh": "\"别激动，好侄子，让他去；他举止像个端庄的绅士；说实话，维罗纳都以他为荣，说他是品德良好、行为得体的青年。我不愿为了全城的财富在我家里贬低他。\"",
+    "ex_en": "Capulet forbids Tybalt from making any disparagement of Romeo at the feast.",
+    "ex_zh": "凯普莱特禁止提伯尔特在宴会上对罗密欧进行任何贬低。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "semblance",
+    "pron": "ˈsembləns",
+    "def_en": "the outward appearance or apparent form of something (semblance of order, faint semblance)",
+    "def_zh": "外表，假象（秩序的外表，模糊的假象）",
+    "quote_en": "\"Therefore be patient, take no note of him: It is my will, the which if thou respect, Show a fair presence and put off these frowns, An ill-beseeming semblance for a feast.\" – Capulet commanding Tybalt to ignore Romeo and stop frowning, because a scowl is an inappropriate outward appearance for a festive occasion (Act 1 Scene 5)",
+    "quote_zh": "\"因此耐心点，别理他：这是我的意愿，如果你尊重它，就表现出一副和善的样子，收起这些皱眉——这种不合宴会礼仪的怒容。\"",
+    "ex_en": "The public semblance of peace in Verona hides a deep and bloody enmity.",
+    "ex_zh": "维罗纳表面上的和平掩盖了深层的血腥敌意。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "profane",
+    "pron": "prəˈfeɪn",
+    "def_en": "to treat with disrespect; not sacred (profane the shrine, profane language)",
+    "def_zh": "亵渎，世俗的（亵渎圣坛，粗俗的语言）",
+    "quote_en": "\"If I profane with my unworthiest hand This holy shrine, the gentle fine is this: My lips, two blushing pilgrims, ready stand To smooth that rough touch with a tender kiss.\" – Romeo approaching Juliet for the first time at the feast, comparing her hand to a holy shrine and worrying that his touch might disrespect it, then offering to let his lips (as pilgrims) make amends with a kiss (Act 1 Scene 5)",
+    "quote_zh": "\"如果我用最卑微的手亵渎了这座神圣的圣坛，那么温柔的惩罚就是这样：我的双唇，两位脸红的朝圣者，随时准备用一个温柔的吻来抚平那粗暴的触碰。\"",
+    "ex_en": "Romeo fears his kiss would profane Juliet, whom he calls a holy saint.",
+    "ex_zh": "罗密欧担心他的吻会亵渎被他称为圣人的朱丽叶。",
+    "part_of_speech": "v./adj."
+  },
+  {
+    "word": "invocation",
+    "pron": "ˌɪnvəˈkeɪʃn",
+    "def_en": "the act of calling upon a deity or spirit (opening invocation, prayer of invocation)",
+    "def_zh": "祈祷，召唤神灵（开场祈祷，召唤祷文）",
+    "quote_en": "\"This cannot anger him: 'twould anger him To raise a spirit in his mistress' circle Of some strange nature, letting it there stand Till she had laid it and conjured it down; That were some spite: my invocation Is fair and honest, and in his mistress' name I conjure only but to raise up him.\" – Mercutio explaining to Benvolio that his magical summons of Romeo is harmless, unlike raising a spirit in a woman’s circle; his invocation is simply calling Romeo by using Rosaline’s name (Act 2 Scene 1)",
+    "quote_zh": "\"这不会惹他生气：会惹他生气的是在他的情人的圈子里召唤某种奇怪性质的灵魂，让它站在那里直到她把它降服；那才是恶意的：我的祈祷是公正诚实的，我只用他情人的名字来召唤他本人。\"",
+    "ex_en": "Mercutio’s playful invocation for Romeo to appear mocks the intensity of young love.",
+    "ex_zh": "墨丘修戏谑地召唤罗密欧现身，嘲笑年轻爱情的激烈。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "entreat",
+    "pron": "ɪnˈtriːt",
+    "def_en": "to ask someone earnestly or anxiously (entreat a favour, humbly entreat)",
+    "def_zh": "恳求，乞求（恳求帮助，谦卑地恳求）",
+    "quote_en": "\"JULIET: Do not swear at all; Or, if thou wilt, swear by thy gracious self, Which is the god of my idolatry, And I'll believe thee. ROMEO: If my heart's dear love— JULIET: Well, do not swear: although I joy in thee, I have no joy of this contract to-night: It is too rash, too unadvised, too sudden.\" – Juliet entreating Romeo not to swear by the moon but also not to swear at all, as she feels their exchange of vows is happening too hastily (Act 2 Scene 2)",
+    "quote_zh": "\"朱丽叶：根本不要发誓；或者，如果你愿意，就凭你优雅的自身发誓，你是我崇拜的神，我会相信你。罗密欧：如果我心中亲爱的爱——朱丽叶：好了，不要发誓：虽然我因你而喜悦，但我对今晚这份契约并无喜悦：它太鲁莽、太欠考虑、太突然了。\"",
+    "ex_en": "Juliet entreats Romeo to deny his name so they can be together without enmity.",
+    "ex_zh": "朱丽叶恳求罗密欧抛弃他的姓氏，这样他们就可以没有敌意地在一起。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "doff",
+    "pron": "dɒf",
+    "def_en": "to remove (an item of clothing); to take off (doff one’s hat, doff a cloak)",
+    "def_zh": "脱去（衣物），摘下（脱帽，脱斗篷）",
+    "quote_en": "\"What's Montague? it is nor hand, nor foot, Nor arm, nor face, nor any other part Belonging to a man. O, be some other name! What's in a name? that which we call a rose By any other name would smell as sweet; So Romeo would, were he not Romeo call'd, Retain that dear perfection which he owes Without that title. Romeo, doff thy name, And for that name which is no part of thee Take all myself.\" – Juliet speaking from her balcony, arguing that a name is an arbitrary label, and begging Romeo to discard his family name (like removing a piece of clothing) so that he can take her instead (Act 2 Scene 2)",
+    "quote_zh": "\"蒙太古算什么？它不是手，不是脚，不是胳膊，不是脸，也不是人身上的任何一部分。哦，换一个别的名字吧！名字算什么？我们称为玫瑰的东西，叫别的名字照样芬芳；罗密欧也是如此，即使不叫罗密欧，他仍然保留着他那完美的本质。罗密欧，抛弃你的名字吧，为了那个不属于你任何部分的名字，你拿走我整个自己。\"",
+    "ex_en": "To marry Juliet, Romeo must doff his Montague identity and embrace a new self.",
+    "ex_zh": "为了娶朱丽叶，罗密欧必须抛弃蒙太古的身份，拥抱新的自我。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "enmity",
+    "pron": "ˈenməti",
+    "def_en": "a state of active hostility or hatred (deep enmity, family enmity)",
+    "def_zh": "敌意，仇恨（深仇大恨，家族仇恨）",
+    "quote_en": "\"If they do see thee, they will murder thee. ROMEO: Alack, there lies more peril in thine eye Than twenty of their swords: look thou but sweet, And I am proof against their enmity.\" – Juliet warning Romeo that her kinsmen will kill him if found in the orchard; Romeo replies that her kindness makes him immune to their hostility (Act 2 Scene 2)",
+    "quote_zh": "\"如果他们看到你，他们会杀了你。罗密欧：哎呀，你的眼里藏着比他们二十把剑更多的危险：只要你对我温柔地看上一眼，我就能抵御他们的敌意。\"",
+    "ex_en": "The ancient enmity between Capulet and Montague makes Romeo and Juliet’s love forbidden.",
+    "ex_zh": "凯普莱特与蒙太古之间的古老仇恨使得罗密欧与朱丽叶的爱情成为禁忌。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "fain",
+    "pron": "feɪn",
+    "def_en": "willingly or eagerly; obliged (would fain do, fain obey)",
+    "def_zh": "乐意地，情愿地（很乐意做，情愿服从）",
+    "quote_en": "\"Thou know'st the mask of night is on my face, Else would a maiden blush bepaint my cheek For that which thou hast heard me speak to-night. Fain would I dwell on form, fain, fain deny What I have spoke: but farewell compliment!\" – Juliet telling Romeo that if not for darkness, she would blush at her own words; she would gladly observe proper etiquette and even deny what she has said, but she abandons such formality for honesty (Act 2 Scene 2)",
+    "quote_zh": "\"你知道夜晚的面具遮着我的脸，否则我会因你今晚听到我说的话而羞红脸颊。我情愿遵循礼仪，情愿、情愿否认我说过的话：但再见吧，虚礼！\"",
+    "ex_en": "Juliet would fain have Romeo swear his love faithfully without oaths to the inconstant moon.",
+    "ex_zh": "朱丽叶情愿罗密欧忠诚地发誓爱她，而不向善变的月亮起誓。",
+    "part_of_speech": "adv./adj."
+  },
+  {
+    "word": "perverse",
+    "pron": "pəˈvɜːs",
+    "def_en": "showing a deliberate and stubborn desire to behave unacceptably (perverse refusal, perverse logic)",
+    "def_zh": "执拗的，反常的（固执的拒绝，反常的逻辑）",
+    "quote_en": "\"Or if thou think'st I am too quickly won, I'll frown and be perverse an say thee nay, So thou wilt woo; but else, not for the world.\" – Juliet confessing that if Romeo thinks she has given in too easily, she will deliberately act stubborn and refuse him just to prolong his courtship (Act 2 Scene 2)",
+    "quote_zh": "\"或者如果你觉得我太容易被打动，我会皱眉，故意别扭，拒绝你，这样你就会继续追求；否则，我绝不会这样。\"",
+    "ex_en": "Tybalt’s perverse hatred of Montagues cannot be softened even by Capulet’s command.",
+    "ex_zh": "提伯尔特对蒙太古家族的执拗仇恨即使凯普莱特的命令也无法软化。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "impute",
+    "pron": "ɪmˈpjuːt",
+    "def_en": "to attribute or credit something to someone (impute blame, impute motives)",
+    "def_zh": "归咎于，归因于（归咎责任，推测动机）",
+    "quote_en": "\"But trust me, gentleman, I'll prove more true Than those that have more cunning to be strange. I should have been more strange, I must confess, But that thou overheard'st, ere I was ware, My true love's passion: therefore pardon me, And not impute this yielding to light love, Which the dark night hath so discovered.\" – Juliet asking Romeo not to attribute her openness to fickleness, explaining that he overheard her true feelings before she could pretend to be aloof (Act 2 Scene 2)",
+    "quote_zh": "\"但相信我，先生，我会比那些更善于装腔作势的人更加真诚。我本该更矜持一些，我承认，但在我意识到之前，你已经听到了我真挚的爱情表白：所以请原谅我，不要把这屈服归因于轻浮的爱——是黑夜泄露了它。\"",
+    "ex_en": "Friar Laurence imputes Romeo’s sudden change of heart to youthful shallowness.",
+    "ex_zh": "劳伦斯神父把罗密欧突然变心归因于年轻人的浅薄。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "sallow",
+    "pron": "ˈsæləʊ",
+    "def_en": "of an unhealthy yellowish or pale brown colour (sallow complexion, sallow skin)",
+    "def_zh": "蜡黄的，灰黄的（蜡黄的肤色，灰黄的皮肤）",
+    "quote_en": "\"Jesu Maria, what a deal of brine Hath wash'd thy sallow cheeks for Rosaline! How much salt water thrown away in waste, To season love, that of it doth not taste!\" – Friar Laurence mocking Romeo for having wept so much over Rosaline that his cheeks turned a pale yellow, calling all those tears wasted because they did not actually win her love (Act 2 Scene 3)",
+    "quote_zh": "\"圣母玛利亚，多少泪水为你那为罗瑟琳而流的蜡黄脸颊洗刷！多少盐水白白浪费，给爱情调味，却尝不出爱情的味道！\"",
+    "ex_en": "Romeo’s sallow face after weeping for Rosaline quickly becomes radiant for Juliet.",
+    "ex_zh": "罗密欧为罗瑟琳哭泣后蜡黄的脸庞很快就因朱丽叶而容光焕发。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "rancor",
+    "pron": "ˈræŋkə",
+    "def_en": "bitterness or resentfulness, especially long-standing (deep rancor, personal rancor)",
+    "def_zh": "怨恨，深仇（深仇大恨，个人怨恨）",
+    "quote_en": "\"But come, young waverer, come, go with me, In one respect I'll thy assistant be; For this alliance may so happy prove, To turn your households' rancour to pure love.\" – Friar Laurence agreeing to marry Romeo and Juliet, hoping that the union will transform the longstanding bitter hatred between the Montagues and Capulets into genuine affection (Act 2 Scene 3)",
+    "quote_zh": "\"但是来吧，年轻的动摇者，跟我来，在一个方面我会帮助你；因为这段联姻也许会如此幸运，能把你们两家的怨恨化为纯粹的爱。\"",
+    "ex_en": "The rancor between the two families is so strong that even a marriage cannot fully erase it.",
+    "ex_zh": "两家的怨恨如此之深，即使婚姻也无法完全消除。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "lamentable",
+    "pron": "ləˈmentəbl",
+    "def_en": "deserving or causing sorrow; regrettable (lamentable outcome, lamentable state)",
+    "def_zh": "可悲的，令人惋惜的（可悲的结果，可悲的状态）",
+    "quote_en": "\"The pox of such antic, lisping, affecting fantasticoes; these new tuners of accents! 'By Jesu, a very good blade! a very tall man! a very good whore!' Why, is not this a lamentable thing, grandsire, that we should be thus afflicted with these strange flies, these fashion-mongers, these perdona-mi's?\" – Mercutio complaining to Benvolio about the pretentious young men who obsess over fashion and manners, calling their affectations a regrettable nuisance (Act 2 Scene 4)",
+    "quote_zh": "\"这些古里古怪、咬文嚼字、装腔作势的幻想家，这些新的口音调音师，真该得瘟疫！‘耶稣啊，一把好剑！一个高个子男人！一个好妓女！’哎呀，外公，这难道不是一件可悲的事吗？我们就这样被这些奇怪的苍蝇、这些时尚贩子、这些‘原谅我’先生折磨？\"",
+    "ex_en": "The lamentable death of Mercutio marks the turning point of the play toward tragedy.",
+    "ex_zh": "墨丘修可悲的死标志着戏剧转向悲剧的转折点。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "scurvy",
+    "pron": "ˈskɜːvi",
+    "def_en": "contemptible or despicable (scurvy knave, scurvy trick)",
+    "def_zh": "卑鄙的，可鄙的（卑鄙的流氓，可鄙的伎俩）",
+    "quote_en": "\"An a' speak any thing against me, I'll take him down, an a' were lustier than he is, and twenty such Jacks; and if I cannot, I'll find those that shall. Scurvy knave! I am none of his flirt-gills; I am none of his skains-mates.\" – The Nurse, furious at Mercutio’s rude jokes, telling Romeo that if Mercutio says anything against her, she will put him in his place, calling him a despicable fellow (Act 2 Scene 4)",
+    "quote_zh": "\"如果他说我任何坏话，我会把他打趴下，就算他比他更强壮，再加二十个这样的家伙也行；如果我不行，我会找能行的人。卑鄙的流氓！我不是他的轻浮女人，也不是他的狐朋狗友。\"",
+    "ex_en": "The Nurse calls Peter a scurvy knave for not defending her against Mercutio’s mockery.",
+    "ex_zh": "奶妈骂彼得是个卑鄙的流氓，因为他不帮她抵挡墨丘修的嘲笑。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "knave",
+    "pron": "neɪv",
+    "def_en": "a dishonest or unscrupulous man (cunning knave, lying knave)",
+    "def_zh": "恶棍，无赖（狡猾的无赖，说谎的恶棍）",
+    "quote_en": "\"Scurvy knave! I am none of his flirt-gills; I am none of his skains-mates. And thou must stand by too, and suffer every knave to use me at his pleasure?\" – The Nurse complaining to Peter that he stood by and let Mercutio (whom she calls a knave) treat her rudely without defending her (Act 2 Scene 4)",
+    "quote_zh": "\"卑鄙的流氓！我不是他的轻浮女人，也不是他的狐朋狗友。你也站在旁边，任凭每一个无赖随心所欲地对待我吗？\"",
+    "ex_en": "Romeo calls the apothecary a poor knave but still buys poison from him.",
+    "ex_zh": "罗密欧称药剂师为可怜的无赖，但还是从他那里买了毒药。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "feign",
+    "pron": "feɪn",
+    "def_en": "to pretend to be affected by a feeling or state (feign illness, feign indifference)",
+    "def_zh": "假装，伪装（装病，假装冷漠）",
+    "quote_en": "\"Had she affections and warm youthful blood, She would be as swift in motion as a ball; My words would bandy her to my sweet love, And his to me: But old folks, many feign as they were dead; Unwieldy, slow, heavy and pale as lead.\" – Juliet waiting impatiently for the Nurse, complaining that older people pretend to be as sluggish as if they were dead, while young lovers should be quick like a ball (Act 2 Scene 5)",
+    "quote_zh": "\"如果她有感情和年轻的血液，她会像球一样飞快；我的话会把她抛向我亲爱的爱人，再把他的话抛回给我。但老人们，很多都假装像死了一样；笨拙、缓慢、沉重、像铅一样苍白。\"",
+    "ex_en": "Juliet feigns obedience to her father while secretly planning to fake her own death.",
+    "ex_zh": "朱丽叶假装服从父亲，同时秘密计划假装自己的死亡。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "poultice",
+    "pron": "ˈpəʊltɪs",
+    "def_en": "a soft, moist mass applied to the body to relieve soreness (herbal poultice, warm poultice)",
+    "def_zh": "膏药，泥敷剂（草药膏药，热敷膏）",
+    "quote_en": "\"O God's lady dear! Are you so hot? marry, come up, I trow; Is this the poultice for my aching bones? Henceforward do your messages yourself.\" – The Nurse, annoyed that Juliet is pressing her for news instead of showing concern for the Nurse’s tired and aching body, sarcastically asking if Juliet’s impatience is supposed to be a healing plaster for her pain (Act 2 Scene 5)",
+    "quote_zh": "\"哦，圣母啊！你就这么心急？哼，得了吧，我想；这就是给我酸痛的骨头贴的膏药吗？从今以后你自己去传话吧。\"",
+    "ex_en": "The Nurse complains that Juliet’s impatience is no poultice for her aching back.",
+    "ex_zh": "奶妈抱怨说朱丽叶的急躁对她酸痛的背根本不是膏药。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "countervail",
+    "pron": "ˌkaʊntəˈveɪl",
+    "def_en": "to offset or counterbalance (countervail against loss, countervailing force)",
+    "def_zh": "抵消，抗衡（抵消损失，抗衡力量）",
+    "quote_en": "\"Amen, amen! but come what sorrow can, It cannot countervail the exchange of joy That one short minute gives me in her sight: Do thou but close our hands with holy words, Then love-devouring death do what he dare.\" – Romeo telling Friar Laurence that no amount of future sorrow can balance or outweigh the joy of even one minute seeing Juliet, and he is willing to face death after being married to her (Act 2 Scene 6)",
+    "quote_zh": "\"阿门，阿门！但不管什么悲伤来临，它都无法抵消那一分钟见到她给我带来的快乐交换：只要你用圣言将我们的手合拢，那么吞噬一切的死亡尽管为所欲为吧。\"",
+    "ex_en": "Romeo believes that even death cannot countervail the happiness of marrying Juliet.",
+    "ex_zh": "罗密欧相信即使死亡也无法抵消与朱丽叶结婚的幸福。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "doublet",
+    "pron": "ˈdʌblɪt",
+    "def_en": "a man’s short close-fitting jacket (embroidered doublet, velvet doublet)",
+    "def_zh": "紧身上衣（刺绣紧身上衣，天鹅绒紧身上衣）",
+    "quote_en": "\"Thou wilt quarrel with a man for cracking nuts, having no other reason but because thou hast hazel eyes: what eye but such an eye would spy out such a quarrel? Thy head is as fun of quarrels as an egg is full of meat, and yet thy head hath been beaten as addle as an egg for quarrelling: thou hast quarrelled with a man for coughing in the street, because he hath wakened thy dog that hath lain asleep in the sun: didst thou not fall out with a tailor for wearing his new doublet before Easter?\" – Mercutio teasing Benvolio about his quarrelsome nature, citing an absurd example of Benvolio fighting with a tailor for wearing a new jacket before the appropriate season (Act 3 Scene 1)",
+    "quote_zh": "\"你会因为一个人敲坚果而跟他吵架，没有别的理由只是因为你的眼睛是榛子色的：除了这样的眼睛，还有什么眼睛能发现这样的吵架理由？你的头装满了吵架，就像鸡蛋装满了蛋黄，然而你的头因为吵架已经被打得像鸡蛋一样稀巴烂了：你没有因为一个裁缝在复活节前穿了他的新紧身上衣而跟他闹翻吗？\"",
+    "ex_en": "Mercutio mocks Benvolio’s quarrelsomeness by mentioning a dispute over a doublet.",
+    "ex_zh": "墨丘修用一件紧身上衣引发的争吵来嘲笑班伏里奥的好斗。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "minstrel",
+    "pron": "ˈmɪnstrəl",
+    "def_en": "a medieval singer or musician (wandering minstrel, court minstrel)",
+    "def_zh": "吟游诗人，乐师（流浪吟游诗人，宫廷乐师）",
+    "quote_en": "\"TYBALT: Mercutio, thou consort'st with Romeo, MERCUTIO: Consort! what, dost thou make us minstrels? an thou make minstrels of us, look to hear nothing but discords: here's my fiddlestick; here's that shall make you dance.\" – Mercutio taking offense when Tybalt uses the word “consort” (meaning associate), twisting it to mean a group of musicians, and angrily saying that if Tybalt calls them minstrels, all he will hear are harsh sounds and a sword fight (Act 3 Scene 1)",
+    "quote_zh": "\"提伯尔特：墨丘修，你和罗密欧是一伙的。墨丘修：一伙？什么，你把我们当成吟游诗人了？如果你把我们当成吟游诗人，那你就等着听不和谐音吧：这是我的琴弓，这是能让你跳舞的东西。\"",
+    "ex_en": "Mercutio takes Tybalt’s word “consort” as an insult, refusing to be called a minstrel.",
+    "ex_zh": "墨丘修把提伯尔特的“同伙”一词当作侮辱，拒绝被称为吟游诗人。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "forbear",
+    "pron": "fɔːˈbeə",
+    "def_en": "to politely or patiently restrain from an action (forbear from comment, forbear to mention)",
+    "def_zh": "克制，忍耐（克制评论，忍住不提）",
+    "quote_en": "\"Draw, Benvolio; beat down their weapons. Gentlemen, for shame, forbear this outrage! Tybalt, Mercutio, the prince expressly hath Forbidden bandying in Verona streets: Hold, Tybalt! good Mercutio!\" – Romeo attempting to stop the fight between Tybalt and Mercutio, shouting at both to restrain themselves from further violence (Act 3 Scene 1)",
+    "quote_zh": "\"拔剑，班伏里奥；打掉他们的武器。先生们，太不像话了，别再这样暴怒了！提伯尔特，墨丘修，亲王已经明确禁止在维罗纳街头斗殴：住手，提伯尔特！好墨丘修！\"",
+    "ex_en": "The Prince commands the families to forbear from further street brawls on pain of death.",
+    "ex_zh": "亲王命令两家克制不再进行街头斗殴，违者处死。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "effeminate",
+    "pron": "ɪˈfemɪnət",
+    "def_en": "having characteristics regarded as typical of a woman; unmanly (effeminate manners, effeminate voice)",
+    "def_zh": "柔弱的，女人气的（柔弱的举止，女人气的声音）",
+    "quote_en": "\"This gentleman, the prince's near ally, My very friend, hath got his mortal hurt In my behalf; my reputation stain'd With Tybalt's slander,—Tybalt, that an hour Hath been my kinsman! O sweet Juliet, Thy beauty hath made me effeminate And in my temper soften'd valour's steel!\" – Romeo, after Mercutio is fatally wounded, blaming Juliet’s beauty for making him soft and womanish, which caused him to hold back from fighting Tybalt earlier (Act 3 Scene 1)",
+    "quote_zh": "\"这位先生，亲王的近亲，我真正的朋友，为我受了致命伤；我的名誉被提伯尔特的诽谤玷污了——提伯尔特，一个小时前还是我的亲戚！哦，亲爱的朱丽叶，你的美丽让我变得柔弱，在我的性情里软化了勇气的钢铁！\"",
+    "ex_en": "Romeo fears that Juliet’s love has made him effeminate after he hesitates to fight Tybalt.",
+    "ex_zh": "罗密欧担心朱丽叶的爱让他变得柔弱，因为他在与提伯尔特战斗时犹豫了。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "dexterity",
+    "pron": "dekˈsterəti",
+    "def_en": "skill in performing tasks, especially with the hands (manual dexterity, verbal dexterity)",
+    "def_zh": "灵巧，敏捷（手巧，口齿伶俐）",
+    "quote_en": "\"Who all as hot, turns deadly point to point, And, with a martial scorn, with one hand beats Cold death aside, and with the other sends It back to Tybalt, whose dexterity, Retorts it: Romeo he cries aloud, 'Hold, friends! friends, part!'\" – Benvolio describing to the Prince how Mercutio and Tybalt fought skillfully, noting Tybalt’s dexterity in returning thrusts before Romeo intervened (Act 3 Scene 1)",
+    "quote_zh": "\"他们两人同样激烈，剑锋相向，以一种战士的轻蔑，一只手把冰冷的死亡拨开，另一只手把它送回给提伯尔特，而提伯尔特凭借灵巧又将剑挡回。罗密欧大声喊道：‘住手，朋友们！朋友们，分开！’\"",
+    "ex_en": "Tybalt’s dexterity with the rapier makes him a feared duellist in Verona.",
+    "ex_zh": "提伯尔特使用细剑的灵巧使他成为维罗纳令人畏惧的决斗者。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "amorous",
+    "pron": "ˈæmərəs",
+    "def_en": "showing or feeling romantic or sexual desire (amorous glance, amorous relationship)",
+    "def_zh": "多情的，恋爱的（多情的目光，恋爱关系）",
+    "quote_en": "\"Gallop apace, you fiery-footed steeds, Towards Phoebus' lodging: such a wagoner As Phaethon would whip you to the west, And bring in cloudy night immediately. Spread thy close curtain, love-performing night, That runaway's eyes may wink and Romeo Leap to these arms, untalk'd of and unseen. Lovers can see to do their amorous rites By their own beauties; or, if love be blind, It best agrees with night.\" – Juliet alone, impatient for night to come so that she can be with Romeo, saying that lovers can perform their romantic acts in darkness, guided only by their own beauty (Act 3 Scene 2)",
+    "quote_zh": "\"飞奔吧，火焰蹄子的骏马，朝着福玻斯的居所奔驰！愿法厄同那样的车夫把你鞭策到西方去，立刻带来阴云密布的夜晚。垂下你密合的窗帘，做爱的夜晚，让那些偷跑的眼睛闭上，让罗密欧跳进我的怀抱，无人谈论，无人看见。恋人凭着自己的美丽就能完成他们恋爱的仪式；或者，如果爱情是盲目的，那它最适合黑夜。\"",
+    "ex_en": "The amorous balcony scene between Romeo and Juliet takes place under the cover of night.",
+    "ex_zh": "罗密欧与朱丽叶在阳台上多情的一幕发生在夜晚的掩护下。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "garish",
+    "pron": "ˈɡeərɪʃ",
+    "def_en": "obtrusively bright and showy; lurid (garish colours, garish decoration)",
+    "def_zh": "过于鲜艳的，俗艳的（俗艳的颜色，花哨的装饰）",
+    "quote_en": "\"Give me my Romeo; and, when he shall die, Take him and cut him out in little stars, And he will make the face of heaven so fine That all the world will be in love with night And pay no worship to the garish sun.\" – Juliet wishing that after Romeo dies, he will be turned into stars that make the night sky so beautiful that everyone will love the night and stop adoring the overly bright, showy sun (Act 3 Scene 2)",
+    "quote_zh": "\"把我的罗密欧给我；等他死后，把他取出切成小星星，他会让天堂的面容如此精致，全世界都会爱上夜晚，不再向那俗艳的太阳朝拜。\"",
+    "ex_en": "Juliet wishes for night to hide her blush, calling the sun garish compared to Romeo.",
+    "ex_zh": "朱丽叶希望夜晚能掩盖她的脸红，称太阳与罗密欧相比显得俗艳。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "bier",
+    "pron": "bɪə",
+    "def_en": "a framework for carrying a coffin or corpse (funeral bier, lying on the bier)",
+    "def_zh": "棺材架，灵柩台（葬礼灵柩台，躺在灵柩台上）",
+    "quote_en": "\"O, break, my heart! poor bankrupt, break at once! To prison, eyes, ne'er look on liberty! Vile earth, to earth resign; end motion here; And thou and Romeo press one heavy bier!\" – Juliet, after the Nurse falsely tells her that Romeo is dead, wishing for her own heart to break and for both her and Romeo to lie together on a single funeral platform (Act 3 Scene 2)",
+    "quote_zh": "\"哦，破碎吧，我的心！可怜的破产者，立刻破碎吧！进监狱吧，眼睛，再也别望向自由！卑贱的尘土，归于尘土；在此结束运动；你和罗密欧压在同一副沉重的灵柩上！\"",
+    "ex_en": "Juliet threatens to die with Romeo, pressing the same bier if he is truly dead.",
+    "ex_zh": "朱丽叶威胁要与罗密欧同死，如果他真的死了就压在同一个灵柩台上。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "purgatory",
+    "pron": "ˈpɜːɡətəri",
+    "def_en": "a place or state of temporary suffering or expiation (in purgatory, spiritual purgatory)",
+    "def_zh": "炼狱，受难之地（在炼狱中，精神的炼狱）",
+    "quote_en": "\"There is no world without Verona walls, But purgatory, torture, hell itself. Hence-banished is banish'd from the world, And world's exile is death: then banished, Is death mis-term'd.\" – Romeo lamenting to Friar Laurence that outside Verona’s walls there is nothing except purgatory, torture, and hell; being banished from Verona is equivalent to being banished from the world, which is the same as death (Act 3 Scene 3)",
+    "quote_zh": "\"维罗纳城墙之外没有世界，只有炼狱、酷刑和地狱本身。因此，被放逐就是被逐出世界，而世界的放逐就是死亡：那么被放逐，就是把死亡叫错了名字。\"",
+    "ex_en": "For Romeo, exile from Verona is a purgatory worse than death because it separates him from Juliet.",
+    "ex_zh": "对罗密欧来说，离开维罗纳的流放是比死亡更痛苦的炼狱，因为那会让他与朱丽叶分离。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "carrion",
+    "pron": "ˈkæriən",
+    "def_en": "decaying flesh of dead animals (carrion birds, carrion smell)",
+    "def_zh": "腐肉（食腐鸟，腐肉气味）",
+    "quote_en": "\"But Romeo may not: more validity, More honourable state, more courtship lives In carrion-flies than Romeo: they may seize On the white wonder of dear Juliet's hand And steal immortal blessing from her lips, Who even in pure and vestal modesty, Still blush, as thinking their own kisses sin; But Romeo may not; he is banished.\" – Romeo envying that even disgusting carrion flies have more access to Juliet than he does, because flies can touch her hand and lips while he is forbidden from even approaching her (Act 3 Scene 3)",
+    "quote_zh": "\"但罗密欧不可以：在腐肉苍蝇身上有更多的合法性、更多的荣誉地位、更多的求爱机会，而不是罗密欧：它们可以抓住亲爱的朱丽叶那洁白的奇迹之手，从她的唇上偷取不朽的祝福，而她即使在纯洁的贞洁谦逊中，仍会脸红，仿佛认为她们自己的吻是有罪的；但罗密欧不可以；他被放逐了。\"",
+    "ex_en": "Romeo envies carrion flies that can touch Juliet’s hand while he is banished.",
+    "ex_zh": "罗密欧嫉妒腐肉苍蝇能触碰朱丽叶的手，而他却遭到流放。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "denote",
+    "pron": "dɪˈnəʊt",
+    "def_en": "to be a sign of; indicate (denote importance, symbol denotes)",
+    "def_zh": "表示，象征（表示重要，符号象征）",
+    "quote_en": "\"Hold thy desperate hand: Art thou a man? thy form cries out thou art: Thy tears are womanish; thy wild acts denote The unreasonable fury of a beast: Unseemly woman in a seeming man! Or ill-beseeming beast in seeming both!\" – Friar Laurence scolding Romeo for threatening suicide, saying that Romeo’s wild behaviour indicates the irrational rage of an animal rather than the conduct of a rational man (Act 3 Scene 3)",
+    "quote_zh": "\"住手，你这绝望的手：你是男人吗？你的身形喊出你是男人：你的眼泪是女人气的；你疯狂的行为表明一种野兽般不理智的狂怒：不像样的女人装在看似男人的身体里！或者是不像样的野兽装在看似两者的身体里！\"",
+    "ex_en": "The tears Romeo sheds denote not weakness but the depth of his love for Juliet.",
+    "ex_zh": "罗密欧流下的眼泪并不表示软弱，而是他对朱丽叶深沉的爱。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "ado",
+    "pron": "əˈduː",
+    "def_en": "a state of fuss or trouble (much ado, without further ado)",
+    "def_zh": "麻烦，纷扰（无事生非，不再啰嗦）",
+    "quote_en": "\"We'll keep no great ado,—a friend or two; For, hark you, Tybalt being slain so late, It may be thought we held him carelessly, Being our kinsman, if we revel much: Therefore we'll have some half a dozen friends, And there an end.\" – Capulet telling Paris that the wedding to Juliet will be a small, quiet affair without much fuss, because Tybalt has just died and large celebrations would seem disrespectful (Act 3 Scene 4)",
+    "quote_zh": "\"我们不大操大办——只请一两个朋友；因为，你听着，提伯尔特刚刚被杀，如果我们在狂欢，人家会以为我们不在乎他，毕竟他是我们的亲属。因此我们只请五六个朋友，就这样定了。\"",
+    "ex_en": "Despite Capulet’s wish for little ado, the wedding preparations for Paris cause great commotion.",
+    "ex_zh": "尽管凯普莱特希望不大操大办，为帕里斯准备的婚礼还是引起了很大骚动。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "jocund",
+    "pron": "ˈdʒɒkənd",
+    "def_en": "cheerful and light-hearted (jocund mood, jocund laughter)",
+    "def_zh": "欢乐的，愉快的（欢乐的心情，愉快的笑声）",
+    "quote_en": "\"It was the lark, the herald of the morn, No nightingale: look, love, what envious streaks Do lace the severing clouds in yonder east: Night's candles are burnt out, and jocund day Stands tiptoe on the misty mountain tops. I must be gone and live, or stay and die.\" – Romeo telling Juliet that the bird singing is the morning lark, not the nightingale, and that cheerful daylight has arrived on the mountain tops, forcing him to leave immediately or be killed (Act 3 Scene 5)",
+    "quote_zh": "\"那是云雀，黎明的使者，不是夜莺：看，爱人，那嫉妒的条纹如何织满东方分离的云朵：夜晚的蜡烛已燃尽，欢乐的白日踮脚站在雾蒙蒙的山顶上。我必须走了才能活，或者留下就得死。\"",
+    "ex_en": "Romeo must leave Juliet even as jocund day breaks, forcing them to part.",
+    "ex_zh": "即使在欢乐的黎明时分，罗密欧也不得不离开朱丽叶，迫使两人分离。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "abhor",
+    "pron": "əbˈhɔː",
+    "def_en": "to regard with disgust and hatred (abhor violence, abhor cruelty)",
+    "def_zh": "憎恶，痛恨（憎恶暴力，痛恨残忍）",
+    "quote_en": "\"Indeed, I never shall be satisfied With Romeo, till I behold him—dead—Is my poor heart for a kinsman vex'd. Madam, if you could find out but a man To bear a poison, I would temper it; That Romeo should, upon receipt thereof, Soon sleep in quiet. O, how my heart abhors To hear him named, and cannot come to him.\" – Juliet speaking deceptively to her mother, pretending to hate Romeo for killing Tybalt, saying she would poison him if she could, and that she abhors even hearing his name because she cannot be with him (in reality, she loves him and the abhorrence is feigned) (Act 3 Scene 5)",
+    "quote_zh": "\"的确，我永远不会对罗密欧感到满意，直到我看见他——死了——我那可怜的心因一个亲属而烦恼。夫人，如果您能找个人去投毒，我会调制毒药；让罗密欧一收到它，就安静地睡去。哦，我的心多么憎恨听到他的名字，却又不能到他身边去。\"",
+    "ex_en": "Juliet publicly claims to abhor Romeo while secretly loving him more than life.",
+    "ex_zh": "朱丽叶公开声称憎恨罗密欧，私下却爱他胜过生命。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "absolve",
+    "pron": "əbˈzɒlv",
+    "def_en": "to declare someone free from guilt or blame (absolve from sin, absolve of responsibility)",
+    "def_zh": "赦免，宽恕（赦免罪过，免除责任）",
+    "quote_en": "\"Well, thou hast comforted me marvellous much. Go in: and tell my lady I am gone, Having displeased my father, to Laurence' cell, To make confession and to be absolved.\" – Juliet lying to the Nurse, saying that she will go to Friar Laurence to confess her sin of disobedience (to her father) and receive absolution, when in fact she plans to take the sleeping potion (Act 3 Scene 5)",
+    "quote_zh": "\"好吧，你真是大大地安慰了我。进去吧：告诉夫人我走了，因为我惹父亲不高兴了，去劳伦斯的牢房，去忏悔并得到赦免。\"",
+    "ex_en": "Friar Laurence absolves Juliet of her sin of disobedience through the plan of the sleeping potion.",
+    "ex_zh": "劳伦斯神父通过假死药计划赦免了朱丽叶不服从的罪过。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "inundation",
+    "pron": "ˌɪnʌnˈdeɪʃn",
+    "def_en": "an overwhelming flood or rush (inundation of water, inundation of requests)",
+    "def_zh": "洪水，泛滥（洪水泛滥，请求如潮）",
+    "quote_en": "\"Immoderately she weeps for Tybalt's death, And therefore have I little talk'd of love; For Venus smiles not in a house of tears. Now, sir, her father counts it dangerous That she doth give her sorrow so much sway, And in his wisdom hastes our marriage, To stop the inundation of her tears; Which, too much minded by herself alone, May be put from her by society.\" – Paris explaining to Friar Laurence why Capulet is rushing the wedding: Juliet’s excessive weeping for Tybalt is like a flood of tears that her father hopes to stem by giving her new social distractions (Act 4 Scene 1)",
+    "quote_zh": "\"她为提伯尔特的死过度哭泣，因此我很少谈及爱情；因为维纳斯不会在泪水的房子里微笑。现在，先生，她父亲认为她任由悲伤泛滥是危险的，所以他明智地催促我们的婚礼，以阻止她泪水的泛滥；如果让她独自过于沉浸，通过社交可以将其驱散。\"",
+    "ex_en": "Capulet hopes that marriage to Paris will stop the inundation of Juliet’s grief for Tybalt.",
+    "ex_zh": "凯普莱特希望与帕里斯的婚姻能阻止朱丽叶为提伯尔特悲伤的泪水泛滥。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "pensive",
+    "pron": "ˈpensɪv",
+    "def_en": "engaged in deep thought, often with sadness (pensive mood, pensive silence)",
+    "def_zh": "沉思的，忧郁的（忧郁的心情，沉思的寂静）",
+    "quote_en": "\"PARIS: Come you to make confession to this father? JULIET: To answer that, I should confess to you. PARIS: Do not deny to him that you love me. JULIET: I will confess to you that I love him. PARIS: So will ye, I am sure, that you love me. JULIET: If I do so, it will be of more price, Being spoke behind your back, than to your face. PARIS: Poor soul, thy face is much abused with tears. FRIAR LAURENCE: My leisure serves me, pensive daughter, now.\" – Friar Laurence addressing Juliet as “pensive daughter” after her tense exchange with Paris, noting her sad and thoughtful state (Act 4 Scene 1)",
+    "quote_zh": "\"帕里斯：你是来向这位神父忏悔的吗？朱丽叶：要回答这个问题，我应该向你忏悔。帕里斯：不要向他否认你爱我。朱丽叶：我会向你承认我爱他。帕里斯：我相信你也会承认你爱我。朱丽叶：如果我那样做，那价值更大，因为是在你背后说的，而不是当面。帕里斯：可怜的灵魂，你的脸被泪水弄脏了。劳伦斯神父：我现在有空，忧郁的女儿。\"",
+    "ex_en": "Juliet appears pensive before taking the potion, contemplating the terrifying possibility of waking in the tomb.",
+    "ex_zh": "朱丽叶在服下药水前显得忧郁，思考着在坟墓中醒来的可怕可能性。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "arbitrate",
+    "pron": "ˈɑːbɪtreɪt",
+    "def_en": "to settle a dispute between parties (arbitrate a conflict, arbitrate a disagreement)",
+    "def_zh": "仲裁，调停（仲裁冲突，调解分歧）",
+    "quote_en": "\"Therefore, out of thy long-experienced time, Give me some present counsel, or, behold, 'Twist my extremes and me this bloody knife Shall play the umpire, arbitrating that Which the commission of thy years and art Could to no issue of true honour bring.\" – Juliet threatening Friar Laurence that if he cannot give her a solution to avoid marrying Paris, she will use a knife to decide (arbitrate) between her desperate situation and herself, resolving the matter that his wisdom cannot solve honourably (Act 4 Scene 1)",
+    "quote_zh": "\"因此，凭你长期的经验，现在就给我一些建议，否则，看啊，这把血淋淋的刀将在我和我的绝境之间担任裁判，裁决你那经年累月的学识和技艺无法带来真正荣誉结果的事。\"",
+    "ex_en": "The Prince attempts to arbitrate between the Montagues and Capulets but fails to prevent bloodshed.",
+    "ex_zh": "亲王试图在蒙太古家和凯普莱特家之间进行调停，但未能阻止流血事件。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "surcease",
+    "pron": "sɜːˈsiːs",
+    "def_en": "cessation; to stop (without surcease, surcease of sorrow)",
+    "def_zh": "停止，中止（不停地，悲伤的停止）",
+    "quote_en": "\"Take thou this vial, being then in bed, And this distilled liquor drink thou off; When presently through all thy veins shall run A cold and drowsy humour, for no pulse Shall keep his native progress, but surcease: No warmth, no breath, shall testify thou livest; The roses in thy lips and cheeks shall fade To paly ashes.\" – Friar Laurence describing to Juliet how the sleeping potion will stop all her vital signs, causing her pulse to cease and making her appear dead (Act 4 Scene 1)",
+    "quote_zh": "\"拿着这小瓶，当你躺在床上时，把这蒸馏的液体一口喝下；然后一种寒冷昏沉的体液会立刻流遍你所有的血管，脉搏不再保持自然的跳动，而是停止：没有温暖，没有呼吸，能证明你活着；你嘴唇和脸颊的玫瑰色会褪成灰白。\"",
+    "ex_en": "The sleeping potion causes a surcease of all vital signs, mimicking death.",
+    "ex_zh": "假死药使所有生命迹象停止，模仿死亡。",
+    "part_of_speech": "n./v."
+  },
+  {
+    "word": "supple",
+    "pron": "ˈsʌpl",
+    "def_en": "flexible and adaptable (supple body, supple mind)",
+    "def_zh": "柔软的，灵活的（柔软的身体，灵活的思想）",
+    "quote_en": "\"Each part, deprived of supple government, Shall, stiff and stark and cold, appear like death: And in this borrow'd likeness of shrunk death Thou shalt continue two and forty hours, And then awake as from a pleasant sleep.\" – Friar Laurence explaining that after taking the potion, Juliet’s limbs will lose their flexible control and become stiff and cold, mimicking death for forty-two hours before she wakes (Act 4 Scene 1)",
+    "quote_zh": "\"每一部分失去灵活的控制，会变得僵硬、冰冷，像死了一样：用这借来的、萎缩的死亡模样，你将持续四十二个小时，然后像从愉快的睡眠中醒来。\"",
+    "ex_en": "Juliet’s supple limbs become stiff and cold as the potion takes effect.",
+    "ex_zh": "随着药水生效，朱丽叶柔软的四肢变得僵硬冰冷。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "kindred",
+    "pron": "ˈkɪndrəd",
+    "def_en": "one’s family and relations (kindred spirits, near kindred)",
+    "def_zh": "亲属，家族（志同道合者，近亲）",
+    "quote_en": "\"Then, as the manner of our country is, In thy best robes uncover'd on the bier Thou shalt be borne to that same ancient vault Where all the kindred of the Capulets lie.\" – Friar Laurence telling Juliet that after the potion makes her appear dead, she will be carried in her best clothes to the Capulet family tomb where all her relatives are buried (Act 4 Scene 1)",
+    "quote_zh": "\"然后，按照我们国家的习俗，你穿着最好的衣服，裸露在灵柩台上，被抬到那个古老的墓穴，那里安息着凯普莱特家族所有的亲属。\"",
+    "ex_en": "Juliet is laid to rest among her kindred in the Capulet tomb, though she is not truly dead.",
+    "ex_zh": "朱丽叶被安葬在凯普莱特家族的墓地中，与她的亲属们一起，尽管她并未真正死去。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "behest",
+    "pron": "bɪˈhest",
+    "def_en": "a command or urgent request (at the behest of, royal behest)",
+    "def_zh": "命令，请求（奉…之命，王命）",
+    "quote_en": "\"Where I have learn'd me to repent the sin Of disobedient opposition To you and your behests, and am enjoin'd By holy Laurence to fall prostrate here, And beg your pardon: pardon, I beseech you! Henceforward I am ever ruled by you.\" – Juliet pretending to her father that she has repented her disobedience to his commands and has been instructed by Friar Laurence to kneel and beg forgiveness (Act 4 Scene 2)",
+    "quote_zh": "\"在那里我学会了忏悔对您和您的命令不服从的罪过，并被神圣的劳伦斯嘱咐跪在这里，恳求您的原谅：请原谅我，我恳求您！从今以后我永远听您的管教。\"",
+    "ex_en": "Juliet appears to submit to her father’s behest to marry Paris, hiding her true plan.",
+    "ex_zh": "朱丽叶表面上服从父亲与帕里斯结婚的命令，隐藏了她的真实计划。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "enjoin",
+    "pron": "ɪnˈdʒɔɪn",
+    "def_en": "to instruct or urge someone to do something (enjoin silence, enjoin obedience)",
+    "def_zh": "嘱咐，命令（嘱咐安静，命令服从）",
+    "quote_en": "\"Where I have learn'd me to repent the sin Of disobedient opposition To you and your behests, and am enjoin'd By holy Laurence to fall prostrate here, And beg your pardon: pardon, I beseech you!\" – Juliet falsely telling Capulet that Friar Laurence has instructed her to kneel and beg for forgiveness, part of her act of pretended obedience (Act 4 Scene 2)",
+    "quote_zh": "\"在那里我学会了忏悔对您和您的命令不服从的罪过，并被神圣的劳伦斯嘱咐跪在这里，恳求您的原谅：请原谅我，我恳求您！\"",
+    "ex_en": "Friar Laurence enjoins Juliet to follow the potion plan precisely for it to succeed.",
+    "ex_zh": "劳伦斯神父嘱咐朱丽叶精确地执行假死药计划以确保成功。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "wayward",
+    "pron": "ˈweɪwəd",
+    "def_en": "difficult to control; willful (wayward child, wayward behaviour)",
+    "def_zh": "任性的，倔强的（任性的孩子，倔强的行为）",
+    "quote_en": "\"Go, nurse, go with her: we'll to church to-morrow. LADY CAPULET: We shall be short in our provision: 'Tis now near night. CAPULET: Tush, I will stir about, And all things shall be well, I warrant thee, wife: Go thou to Juliet, help to deck up her; I'll not to bed to-night; let me alone; I'll play the housewife for this once. What, ho! They are all forth. Well, I will walk myself To County Paris, to prepare him up Against to-morrow: my heart is wondrous light, Since this same wayward girl is so reclaim'd.\" – Capulet rejoicing that his willful, disobedient daughter has finally been brought back into line, making his heart light (Act 4 Scene 2)",
+    "quote_zh": "\"去吧，奶妈，跟她去：我们明天去教堂。凯普莱特夫人：我们的准备会不够：现在已经快天黑了。凯普莱特：嘘，我会张罗起来，一切都会好的，我向你保证，老婆。你去朱丽叶那儿，帮她打扮起来；我今晚不睡觉了，别管我；我这一次就当一回家庭主妇。喂，喂！他们都出去了。好吧，我亲自去帕里斯伯爵那儿，为他明天的婚事做准备。我的心无比轻松，因为这个任性的女孩总算被改造好了。\"",
+    "ex_en": "Capulet calls Juliet wayward for initially refusing Paris, then celebrates her false change of heart.",
+    "ex_zh": "凯普莱特称朱丽叶任性因为她最初拒绝帕里斯，然后为她虚假的回心转意而庆祝。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "orison",
+    "pron": "ˈɒrɪzn",
+    "def_en": "a prayer (evening orison, humble orison)",
+    "def_zh": "祈祷，祷告（晚祷，谦卑的祷告）",
+    "quote_en": "\"Ay, those attires are best: but, gentle nurse, I pray thee, leave me to myself to-night, For I have need of many orisons To move the heavens to smile upon my state, Which, well thou know'st, is cross, and full of sin.\" – Juliet asking the Nurse to leave her alone for the night, claiming she needs to say many prayers to ask heaven to look favourably on her difficult and sinful situation (when in fact she plans to drink the potion) (Act 4 Scene 3)",
+    "quote_zh": "\"是的，那些衣服最好：但是，好奶妈，我求求你，今晚让我一个人待着，因为我需要许多祈祷，来感动上天对我的处境微笑，而你知道，这处境是逆境的，充满了罪过。\"",
+    "ex_en": "Juliet pretends to need orisons before bed, but actually prepares to drink the potion.",
+    "ex_zh": "朱丽叶假装睡前需要祷告，实际上准备服下假死药。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "accursed",
+    "pron": "əˈkɜːsɪd",
+    "def_en": "under a curse; damned (accursed fate, accursed place)",
+    "def_zh": "被诅咒的，可憎的（被诅咒的命运，可憎的地方）",
+    "quote_en": "\"Accursed, unhappy, wretched, hateful day! Most miserable hour that e'er time saw In lasting labour of his pilgrimage! But one, poor one, one poor and loving child, But one thing to rejoice and solace in, And cruel death hath catch'd it from my sight!\" – Lady Capulet lamenting when she believes Juliet is dead, calling the day cursed and wretched because death has taken her only child (Act 4 Scene 5)",
+    "quote_zh": "\"被诅咒的、不幸的、悲惨的、可恨的一天！时间在其漫长的朝圣之旅中所见过的最悲惨的时刻！只有一个，可怜的一个，一个可怜又可爱的孩子，只有一件可以欢喜和慰藉的事情，而残酷的死亡却从我眼前把它夺走了！\"",
+    "ex_en": "The day of Juliet’s supposed death is accursed for the Capulets, but it is part of the lovers’ tragic plan.",
+    "ex_zh": "朱丽叶假死的这一天对凯普莱特家来说是被诅咒的，但这是恋人们悲剧计划的一部分。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "beguile",
+    "pron": "bɪˈɡaɪl",
+    "def_en": "to charm or deceive (beguile with words, beguile the time)",
+    "def_zh": "欺骗，迷惑（用言语欺骗，消磨时间）",
+    "quote_en": "\"Beguiled, divorced, wronged, spited, slain! Most detestable death, by thee beguil'd, By cruel cruel thee quite overthrown! O love! O life! not life, but love in death!\" – Paris mourning over Juliet’s body, feeling deceived and cheated by death, which has taken his bride on their wedding day (Act 4 Scene 5)",
+    "quote_zh": "\"被欺骗、被抛弃、被冤枉、被怨恨、被杀害！最可憎的死亡，被你欺骗了，被你残酷、残酷地彻底摧毁了！哦，爱！哦，生命！不是生命，而是死亡中的爱！\"",
+    "ex_en": "Paris feels beguiled by death, which stole his bride on the morning of their wedding.",
+    "ex_zh": "帕里斯感到被死亡欺骗了，死亡在他们婚礼的早晨夺走了他的新娘。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "detestable",
+    "pron": "dɪˈtestəbl",
+    "def_en": "deserving intense dislike (detestable crime, detestable behaviour)",
+    "def_zh": "可憎的，可恶的（可憎的罪行，可恶的行为）",
+    "quote_en": "\"Beguiled, divorced, wronged, spited, slain! Most detestable death, by thee beguil'd, By cruel cruel thee quite overthrown! O love! O life! not life, but love in death!\" – Paris calling death “most detestable” for taking Juliet away from him, expressing his intense hatred for the force that has destroyed his hopes (Act 4 Scene 5)",
+    "quote_zh": "\"被欺骗、被抛弃、被冤枉、被怨恨、被杀害！最可憎的死亡，被你欺骗了，被你残酷、残酷地彻底摧毁了！哦，爱！哦，生命！不是生命，而是死亡中的爱！\"",
+    "ex_en": "The feud that causes the lovers’ deaths is a detestable legacy of the two houses.",
+    "ex_zh": "导致恋人死亡的血仇是两个家族可憎的遗产。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "dirge",
+    "pron": "dɜːdʒ",
+    "def_en": "a lament for the dead, especially part of a funeral (funeral dirge, mournful dirge)",
+    "def_zh": "挽歌，哀乐（葬礼挽歌，悲伤的挽歌）",
+    "quote_en": "\"All things that we ordained festival, Turn from their office to black funeral; Our instruments to melancholy bells, Our wedding cheer to a sad burial feast, Our solemn hymns to sullen dirges change, Our bridal flowers serve for a buried corse, And all things change them to the contrary.\" – Capulet lamenting that everything prepared for Juliet’s wedding has been transformed into funeral preparations, with joyful hymns becoming mournful dirges (Act 4 Scene 5)",
+    "quote_zh": "\"我们所有为节日准备的东西，都从它们的职责转向了黑色的葬礼；我们的乐器变成了忧郁的丧钟，我们的婚宴变成了悲伤的葬宴，我们庄严的赞美诗变成了阴沉的挽歌，我们的新娘鲜花服务于埋葬的尸体，所有事物都变成了相反的东西。\"",
+    "ex_en": "The music prepared for Juliet’s wedding becomes a dirge when she is found dead.",
+    "ex_zh": "为朱丽叶婚礼准备的音乐在她被发现死亡时变成了挽歌。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "pestilent",
+    "pron": "ˈpestɪlənt",
+    "def_en": "destructive to life; deadly (pestilent disease, pestilent influence)",
+    "def_zh": "致命的，有害的（致命的疾病，有害的影响）",
+    "quote_en": "\"First Musician: Faith, we may put up our pipes, and be gone. Nurse: Honest goodfellows, ah, put up, put up; For, well you know, this is a pitiful case. Exit. First Musician: Ay, by my troth, the case may be amended. Enter PETER. PETER: Musicians, O, musicians, 'Heart's ease, Heart's ease:' O, an you will have me live, play 'Heart's ease.' ... First Musician: What a pestilent knave is this same!\" – After Juliet is found “dead,” the musicians discuss leaving; then Peter enters asking for a cheerful song, and one musician calls him a pestilent (deadly annoying) knave (Act 4 Scene 5)",
+    "quote_zh": "\"第一位乐师：说真的，我们可以收起管子走人了。奶妈：老实的好伙计们，啊，收起来，收起来；你们知道，这是个可怜的事。下。第一位乐师：是的，我发誓，这情况可以改善。彼得上。彼得：乐师们，哦，乐师们，‘心灵的慰藉，心灵的慰藉’；哦，如果你们想让我活下去，就奏‘心灵的慰藉’。……第一位乐师：这是个多么可恶的流氓！\"",
+    "ex_en": "The pestilent feud spreads like a disease through Verona, infecting everyone it touches.",
+    "ex_zh": "这场致命的世仇像疾病一样在维罗纳蔓延，感染了它所触及的每个人。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "presage",
+    "pron": "ˈpresɪdʒ",
+    "def_en": "a sign or warning of a future event (presage disaster, ominous presage)",
+    "def_zh": "预兆，预示（预示灾难，不祥的预兆）",
+    "quote_en": "\"If I may trust the flattering truth of sleep, My dreams presage some joyful news at hand: My bosom's lord sits lightly in his throne; And all this day an unaccustom'd spirit Lifts me above the ground with cheerful thoughts. I dreamt my lady came and found me dead— Strange dream, that gives a dead man leave to think!— And breathed such life with kisses in my lips, That I revived, and was an emperor.\" – Romeo in Mantua, believing that his dream of Juliet reviving him with a kiss predicts good news, though the dream ironically foreshadows his actual death (Act 5 Scene 1)",
+    "quote_zh": "\"如果我能相信睡眠中谄媚的真相，我的梦预示着即将到来的好消息：我胸中的主君轻松地坐在宝座上；整整一天，一种不寻常的精神用愉快的思绪把我提升到地面之上。我梦见我的夫人来了，发现我死了——奇怪的梦，让死人还能思考！——她用吻在我的唇上吹入这样的生命，以至于我复活了，成了一位皇帝。\"",
+    "ex_en": "Romeo’s dream presages his reunion with Juliet in death, though he interprets it as joy.",
+    "ex_zh": "罗密欧的梦预示着他在死亡中与朱丽叶重逢，尽管他将其解读为喜悦。",
+    "part_of_speech": "v./n."
+  },
+  {
+    "word": "apothecary",
+    "pron": "əˈpɒθəkəri",
+    "def_en": "a person who prepared and sold medicines (village apothecary, apothecary shop)",
+    "def_zh": "药剂师（乡村药剂师，药剂师店铺）",
+    "quote_en": "\"I do remember an apothecary,— And hereabouts he dwells,—which late I noted In tatter'd weeds, with overwhelming brows, Culling of simples; meagre were his looks, Sharp misery had worn him to the bones: And in his needy shop a tortoise hung, An alligator stuff'd, and other skins Of ill-shap'd fishes.\" – Romeo recalling a poor apothecary he noticed in Mantua, describing his shabby appearance and the destitute state of his shop, deciding to buy poison from him (Act 5 Scene 1)",
+    "quote_zh": "\"我记得有一个药剂师——他就住在这附近——我前不久注意到他穿着破烂的衣服，眉头紧锁，正在采集草药；他面容消瘦，尖锐的苦难把他折磨得骨瘦如柴：在他那贫困的店铺里挂着一只乌龟、一只填充的鳄鱼，还有其他畸形鱼的皮。\"",
+    "ex_en": "Romeo buys poison from a desperate apothecary who sells it despite the law.",
+    "ex_zh": "罗密欧从一个不顾法律出售毒药的绝望药剂师那里买了毒药。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "penury",
+    "pron": "ˈpenjəri",
+    "def_en": "extreme poverty (live in penury, reduced to penury)",
+    "def_zh": "贫困，赤贫（生活贫困，陷入赤贫）",
+    "quote_en": "\"Noting this penury, to myself I said 'An if a man did need a poison now, Whose sale is present death in Mantua, Here lives a catiff wretch would sell it him.' O, this same thought did but forerun my need; And this same needy man must sell it me.\" – Romeo observing the apothecary’s extreme poverty, realizing that a man so destitute would break the law and sell poison even though it is punishable by death (Act 5 Scene 1)",
+    "quote_zh": "\"注意到他的贫困，我对自己说：‘如果现在有人需要毒药，而在曼图亚出售毒药会被立即处死，这里住着一个卑鄙的可怜虫会把毒药卖给他。’哦，这个想法只是预见了我的需要；而这个贫困的人必须把毒药卖给我。\"",
+    "ex_en": "The apothecary’s penury forces him to sell poison even though the punishment is death.",
+    "ex_zh": "药剂师的贫困迫使他出售毒药，尽管惩罚是死刑。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "ducat",
+    "pron": "ˈdʌkət",
+    "def_en": "a gold coin formerly used in Europe (gold ducat, forty ducats)",
+    "def_zh": "达克特金币（金币，四十达克特）",
+    "quote_en": "\"Come hither, man. I see that thou art poor: Hold, there is forty ducats: let me have A dram of poison, such soon-speeding gear As will disperse itself through all the veins That the life-weary taker may fall dead And that the trunk may be discharged of breath As violently as hasty powder fired Doth hurry from the fatal cannon's womb.\" – Romeo offering the apothecary forty gold ducats (a large sum) in exchange for a fast-acting poison that will kill instantly (Act 5 Scene 1)",
+    "quote_zh": "\"到这儿来，伙计。我看得出你很穷：拿着，这是四十达克特：给我一打兰毒药，那种快速生效的东西，能迅速扩散到所有血管，让厌倦生命的人立刻倒地而死，使躯壳如同火药从致命的大炮膛中喷出般猛烈地断气。\"",
+    "ex_en": "Romeo gives the apothecary forty ducats, far more than the poison is worth, driven by desperation.",
+    "ex_zh": "罗密欧给了药剂师四十达克特，远远超过了毒药的价值，他被绝望所驱使。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "inexorable",
+    "pron": "ɪnˈeksərəbl",
+    "def_en": "impossible to stop or prevent (inexorable fate, inexorable march)",
+    "def_zh": "不可阻挡的，无情的（不可阻挡的命运，无情的步伐）",
+    "quote_en": "\"Give me that mattock and the wrenching iron. Hold, take this letter; early in the morning See thou deliver it to my lord and father. Give me the light: upon thy life, I charge thee, Whate'er thou hear'st or seest, stand all aloof, And do not interrupt me in my course. ... But if thou, jealous, dost return to pry In what I further shall intend to do, By heaven, I will tear thee joint by joint And strew this hungry churchyard with thy limbs: The time and my intents are savage-wild, More fierce and more inexorable far Than empty tigers or the roaring sea.\" – Romeo threatening Balthasar not to spy on him at the tomb, saying his intentions are more unstoppable and fierce than hungry tigers or the raging sea (Act 5 Scene 3)",
+    "quote_zh": "\"把那把镐和那根撬铁给我。拿着，把这封信收好；清晨你把它交给我的父亲。把灯给我：我以你的性命命令你，不管你听到什么或看到什么，都站得远远的，不要打断我的行动。……但如果你疑神疑鬼，回来窥探我接下来的意图，我以天堂起誓，我会把你一块一块撕碎，把这饥饿的教堂墓地撒满你的肢体：此刻我的心境和时间一样野蛮狂野，远比空肚子老虎或咆哮的大海更加凶猛和无情。\"",
+    "ex_en": "The inexorable force of fate drives Romeo and Juliet toward their tragic end.",
+    "ex_zh": "命运不可阻挡的力量驱使罗密欧与朱丽叶走向悲剧的结局。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "maw",
+    "pron": "mɔː",
+    "def_en": "the mouth, jaws, or stomach of a voracious animal (hungry maw, death’s maw)",
+    "def_zh": "口部，胃囊（饥饿的胃，死亡的巨口）",
+    "quote_en": "\"Thou detestable maw, thou womb of death, Gorged with the dearest morsel of the earth, Thus I enforce thy rotten jaws to open, And, in despite, I'll cram thee with more food!\" – Romeo addressing the Capulet tomb as a hateful, devouring stomach or womb of death that has swallowed Juliet, and he will force it open and stuff it with more (his own body) (Act 5 Scene 3)",
+    "quote_zh": "\"你这可憎的巨口，死亡的子宫，吞食了地上最亲爱的珍馐，我就这样迫使你腐烂的下颚张开，不顾一切地，我要把你塞满更多的食物！\"",
+    "ex_en": "Romeo forces open the tomb, calling it the maw of death that has swallowed Juliet.",
+    "ex_zh": "罗密欧强行打开坟墓，称其为吞噬朱丽叶的死亡巨口。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "apprehend",
+    "pron": "ˌæprɪˈhend",
+    "def_en": "to arrest or seize; to understand (apprehend a criminal, apprehend the danger)",
+    "def_zh": "逮捕，理解（逮捕罪犯，理解危险）",
+    "quote_en": "\"Stop thy unhallow'd toil, vile Montague! Can vengeance be pursued further than death? Condemned villain, I do apprehend thee: Obey, and go with me; for thou must die.\" – Paris confronting Romeo at the tomb, attempting to arrest or seize him as a criminal for violating the tomb (Act 5 Scene 3)",
+    "quote_zh": "\"停止你不敬的劳作，卑鄙的蒙太古！复仇还能比死亡走得更远吗？该死的恶棍，我逮捕你：服从，跟我走；因为你必须死。\"",
+    "ex_en": "The Watch apprehends Friar Laurence and Balthasar to question them about the deaths.",
+    "ex_zh": "巡夜人逮捕了劳伦斯神父和鲍尔萨泽，就死亡事件进行讯问。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "peruse",
+    "pron": "pəˈruːz",
+    "def_en": "to read or examine carefully (peruse a document, peruse the details)",
+    "def_zh": "仔细阅读，细读（仔细阅读文件，细读细节）",
+    "quote_en": "\"In faith, I will. Let me peruse this face. Mercutio's kinsman, noble County Paris! What said my man, when my betossed soul Did not attend him as we rode? I think He told me Paris should have married Juliet: Said he not so? or did I dream it so?\" – Romeo, after killing Paris, deciding to look closely at his face and recognizing him as Mercutio’s relative and the man who was supposed to marry Juliet (Act 5 Scene 3)",
+    "quote_zh": "\"说真的，我会的。让我仔细看看这张脸。墨丘修的亲戚，高贵的帕里斯伯爵！我的仆人说了什么？当时我动荡的灵魂没有听进去。我想他告诉我帕里斯本应娶朱丽叶：他是不是这么说的？还是我做梦了？\"",
+    "ex_en": "Romeo peruses Paris’s face and recognizes him as Mercutio’s kinsman before burying him.",
+    "ex_zh": "罗密欧仔细查看帕里斯的脸，认出他是墨丘修的亲属，然后将他埋葬。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "inter",
+    "pron": "ɪnˈtɜː",
+    "def_en": "to bury (a corpse) (inter the dead, solemnly inter)",
+    "def_zh": "埋葬（埋葬死者，庄严地埋葬）",
+    "quote_en": "\"Death, lie thou there, by a dead man interr'd.\" – Romeo, after placing Paris’s body inside the Capulet tomb, saying that Death lies there buried by a dead man (himself) (Act 5 Scene 3)",
+    "quote_zh": "\"死亡，你就躺在那儿，被一个死人埋葬。\"",
+    "ex_en": "Romeo inter Paris in the Capulet tomb as a final act of respect before dying beside Juliet.",
+    "ex_zh": "罗密欧将帕里斯安葬在凯普莱特家的墓穴中，作为在朱丽叶身旁死去前的最后敬意。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "ensign",
+    "pron": "ˈensaɪn",
+    "def_en": "a flag or banner, especially military (ship’s ensign, national ensign)",
+    "def_zh": "旗帜，军旗（船旗，国旗）",
+    "quote_en": "\"O my love! my wife! Death, that hath suck'd the honey of thy breath, Hath had no power yet upon thy beauty: Thou art not conquer'd; beauty's ensign yet Is crimson in thy lips and in thy cheeks, And death's pale flag is not advanced there.\" – Romeo gazing at Juliet’s body in the tomb, noticing that even though she appears dead, the crimson flag of beauty still flies on her lips and cheeks, and death’s pale flag has not yet been raised (Act 5 Scene 3)",
+    "quote_zh": "\"哦，我的爱人！我的妻子！死亡，虽然吸干了你呼吸的蜜糖，却尚未对你的美丽有任何力量：你没有被征服；美丽的旗帜仍在你的嘴唇和脸颊上绯红，死亡的苍白旗帜尚未在那里升起。\"",
+    "ex_en": "Romeo sees the ensign of beauty still flying on Juliet’s face, though she appears dead.",
+    "ex_zh": "罗密欧看到美丽的旗帜仍在朱丽叶的脸上飘扬，尽管她看似已死。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "inauspicious",
+    "pron": "ˌɪnɔːˈspɪʃəs",
+    "def_en": "unpromising; unlucky (inauspicious start, inauspicious omen)",
+    "def_zh": "不吉利的，不祥的（不吉利的开端，不祥之兆）",
+    "quote_en": "\"And never from this palace of dim night Depart again: here, here will I remain With worms that are thy chamber-maids; O, here Will I set up my everlasting rest, And shake the yoke of inauspicious stars From this world-wearied flesh.\" – Romeo deciding to die beside Juliet, declaring that he will stay forever in the tomb and shake off the burden of the unlucky stars that have doomed them (Act 5 Scene 3)",
+    "quote_zh": "\"再也不离开这昏暗的宫殿：这里，这里我将留下，与作为你侍女的小虫为伴；哦，在这里我将安设我永久的安息，从这厌倦世界的肉体上，抖掉不祥之星的重轭。\"",
+    "ex_en": "The inauspicious stars that doomed the lovers from the start finally claim their lives.",
+    "ex_zh": "从一开始就注定这对恋人不幸的星辰最终夺走了他们的生命。",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "discern",
+    "pron": "dɪˈsɜːn",
+    "def_en": "to recognize or distinguish (discern a difference, discern the truth)",
+    "def_zh": "辨别，看出（辨别差异，看出真相）",
+    "quote_en": "\"Bliss be upon you! Tell me, good my friend, What torch is yond, that vainly lends his light To grubs and eyeless skulls? as I discern, It burneth in the Capel's monument.\" – Friar Laurence arriving at the churchyard, asking Balthasar to identify the torch he sees burning, and then recognizing that it is in the Capulet tomb (Act 5 Scene 3)",
+    "quote_zh": "\"祝福你！告诉我，好朋友，那边那支火把是什么，白白地把光借给蛆虫和没有眼睛的头骨？据我辨认，它正燃烧在凯普莱特家的坟墓里。\"",
+    "ex_en": "The Prince tries to discern the truth of the tragedy from the Friar’s confession and Romeo’s letter.",
+    "ex_zh": "亲王试图从神父的忏悔和罗密欧的信中辨别悲剧的真相。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "sepulcher",
+    "pron": "ˈsepəlkə",
+    "def_en": "a small room or monument for burial (ancient sepulcher, family sepulcher)",
+    "def_zh": "坟墓，墓穴（古老的坟墓，家族墓穴）",
+    "quote_en": "\"O me! this sight of death is as a bell, That warns my old age to a sepulchre.\" – Lady Capulet, upon seeing Juliet’s dead body, saying that the sight of death serves as a bell reminding her that she too will soon be in her own tomb (Act 5 Scene 3)",
+    "quote_zh": "\"哦，天哪！这死亡的景象就像一口钟，警告我的晚年已近坟墓。\"",
+    "ex_en": "The Capulet sepulcher becomes the final resting place for both Romeo and Juliet.",
+    "ex_zh": "凯普莱特家的墓穴成了罗密欧与朱丽叶最后的安息之地。",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "thwart",
+    "pron": "θwɔːt",
+    "def_en": "to prevent from accomplishing a purpose (thwart a plan, thwart an attack)",
+    "def_zh": "阻挠，挫败（阻挠计划，挫败攻击）",
+    "quote_en": "\"I hear some noise. Lady, come from that nest Of death, contagion, and unnatural sleep: A greater power than we can contradict Hath thwarted our intents. Come, come away. Thy husband in thy bosom there lies dead; And Paris too.\" – Friar Laurence, hearing a noise, urging the waking Juliet to leave the tomb, realizing that a higher power has blocked or defeated their plan (Act 5 Scene 3)",
+    "quote_zh": "\"我听到些声音。夫人，离开那死亡、传染和异常睡眠的巢穴吧：比我们所能反抗的更强大的力量阻挠了我们的意图。来吧，走吧。你的丈夫就在你的怀里躺着死了；还有帕里斯也死了。\"",
+    "ex_en": "The quarantine due to the plague thwarts Friar John’s delivery of Laurence’s letter to Romeo.",
+    "ex_zh": "瘟疫导致的隔离阻挠了约翰神父将劳伦斯的信送给罗密欧。",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "ambiguity",
+    "pron": "ˌæmbɪˈɡjuːəti",
+    "def_en": "uncertainty or inexactness of meaning (clear ambiguity, moral ambiguity)",
+    "def_zh": "歧义，含糊不清（明显的歧义，道德上的含糊）",
+    "quote_en": "\"Seal up the mouth of outrage for a while, Till we can clear these ambiguities, And know their spring, their head, their true descent; And then will I be general of your woes, And lead you even to death: meantime forbear, And let mischance be slave to patience.\" – The Prince ordering everyone to stop their expressions of grief and outrage until he can resolve the uncertainties about what truly happened, discovering the origin and truth of the tragedy (Act 5 Scene 3)",
+    "quote_zh": "\"暂时封住愤怒之口，直到我们能澄清这些含糊之处，知道它们的源头、根源和真正的由来；然后我将成为你们悲伤的统领，带领你们走向死亡：同时请忍耐，让不幸成为耐心的奴隶。\"",
+    "ex_en": "The Prince demands an end to ambiguity, hearing the full truth of the lovers’ secret marriage and deaths.",
+    "ex_zh": "亲王要求消除含糊之处，听取恋人们秘密婚姻和死亡的完整真相。",
+    "part_of_speech": "noun"
+  }
+];
+
+// ============================================================
+// SYNONYMS/ANTONYMS DATA
+// ============================================================
+const SYNAN = JSON.parse(decodeURIComponent(escape(atob("eyJwZXJuaWNpb3VzIjp7InN5biI6WyJoYXJtZnVsIiwiZGVzdHJ1Y3RpdmUiLCJtYWxpY2lvdXMiLCJub3hpb3VzIiwiYmFsZWZ1bCIsImRlYWRseSJdLCJhbnQiOlsiYmVuZWZpY2lhbCIsImhhcm1sZXNzIiwiZmF2b3JhYmxlIiwiaW5ub2N1b3VzIl19LCJjb3ZlcnQiOnsic3luIjpbImhpZGRlbiIsInNlY3JldCIsImNvbmNlYWxlZCIsImNsYW5kZXN0aW5lIiwic3RlYWx0aHkiLCJmdXJ0aXZlIl0sImFudCI6WyJvcGVuIiwib3ZlcnQiLCJwdWJsaWMiLCJleHBvc2VkIl19LCJwb3J0ZW50b3VzIjp7InN5biI6WyJvbWlub3VzIiwiZm9yZWJvZGluZyIsInNpbmlzdGVyIiwidGhyZWF0ZW5pbmciLCJwcm9waGV0aWMiLCJ1bnByb3BpdGlvdXMiXSwiYW50IjpbImF1c3BpY2lvdXMiLCJwcm9taXNpbmciLCJmYXZvcmFibGUiLCJ1bnRocmVhdGVuaW5nIl19LCJpbXBvcnR1bmUiOnsic3luIjpbImJlZyIsInNvbGljaXQiLCJiZXNlZWNoIiwiaW1wbG9yZSIsImVudHJlYXQiLCJoYXJhc3MiXSwiYW50IjpbInJlZnVzZSIsInNwdXJuIiwiaWdub3JlIiwiZGlzbWlzcyJdfSwicHJvcGFnYXRlIjp7InN5biI6WyJzcHJlYWQiLCJkaXNzZW1pbmF0ZSIsInByb21vdGUiLCJjaXJjdWxhdGUiLCJicm9hZGNhc3QiLCJkaWZmdXNlIl0sImFudCI6WyJzdXBwcmVzcyIsImNvbnRhaW4iLCJzdGlmbGUiLCJyZXN0cmljdCJdfSwiZm9yc3dlYXIiOnsic3luIjpbInJlbm91bmNlIiwiYWJqdXJlIiwicmVjYW50IiwicmVwdWRpYXRlIiwiYWJhbmRvbiIsImRpc2F2b3ciXSwiYW50IjpbInN3ZWFyIiwidm93IiwicGxlZGdlIiwiYWZmaXJtIl19LCJsaW5lYW1lbnQiOnsic3luIjpbImZlYXR1cmUiLCJjaGFyYWN0ZXJpc3RpYyIsImNvbnRvdXIiLCJ0cmFpdCIsImFzcGVjdCIsIm1hcmtpbmciXSwiYW50IjpbXX0sInZpc2FnZSI6eyJzeW4iOlsiZmFjZSIsImNvdW50ZW5hbmNlIiwiZmVhdHVyZXMiLCJleHByZXNzaW9uIiwibG9vayIsImFwcGVhcmFuY2UiXSwiYW50IjpbXX0sImFub24iOnsic3luIjpbInNvb24iLCJzaG9ydGx5IiwicHJlc2VudGx5IiwiZGlyZWN0bHkiLCJpbW1lZGlhdGVseSIsImZvcnRod2l0aCJdLCJhbnQiOlsibGF0ZXIiLCJldmVudHVhbGx5IiwibmV2ZXIiXX0sImJvZGUiOnsic3luIjpbInBvcnRlbmQiLCJmb3Jlc2hhZG93IiwicHJlc2FnZSIsImF1Z3VyIiwiZm9yZXRlbGwiLCJpbmRpY2F0ZSJdLCJhbnQiOltdfSwicmV2ZWwiOnsic3luIjpbImNlbGVicmF0ZSIsImNhcm91c2UiLCJwYXJ0eSIsImZlc3Rpdml0eSIsIm1lcnJ5bWFraW5nIiwiam9sbGl0eSJdLCJhbnQiOlsibW91cm4iLCJsYW1lbnQiLCJncmlldmUiLCJzb3Jyb3ciXX0sInVudGltZWx5Ijp7InN5biI6WyJwcmVtYXR1cmUiLCJlYXJseSIsImlsbC10aW1lZCIsImlub3Bwb3J0dW5lIiwidW5zZWFzb25hYmxlIiwiYWJydXB0Il0sImFudCI6WyJ0aW1lbHkiLCJvcHBvcnR1bmUiLCJzZWFzb25hYmxlIiwiZXhwZWN0ZWQiXX0sImRpc3BhcmFnZW1lbnQiOnsic3luIjpbImJlbGl0dGxlbWVudCIsImRldHJhY3Rpb24iLCJkZXByZWNhdGlvbiIsInNjb3JuIiwiZGlzY3JlZGl0IiwiZGVyb2dhdGlvbiJdLCJhbnQiOlsicHJhaXNlIiwiY29tbWVuZGF0aW9uIiwiY29tcGxpbWVudCIsImFkbWlyYXRpb24iXX0sInNlbWJsYW5jZSI6eyJzeW4iOlsiYXBwZWFyYW5jZSIsImZhY2FkZSIsImd1aXNlIiwicHJldGVuc2UiLCJ2ZW5lZXIiLCJsaWtlbmVzcyJdLCJhbnQiOlsicmVhbGl0eSIsInN1YnN0YW5jZSIsImVzc2VuY2UiLCJ0cnV0aCJdfSwicHJvZmFuZSI6eyJzeW4iOlsiZGVzZWNyYXRlIiwiZGVmaWxlIiwidmlvbGF0ZSIsImJsYXNwaGVtZSIsImRlYmFzZSIsImRlZ3JhZGUiXSwiYW50IjpbImhvbm9yIiwicmVzcGVjdCIsImNvbnNlY3JhdGUiLCJzYW5jdGlmeSJdfSwiaW52b2NhdGlvbiI6eyJzeW4iOlsiYXBwZWFsIiwic3VwcGxpY2F0aW9uIiwicGV0aXRpb24iLCJwcmF5ZXIiLCJlbnRyZWF0eSIsInBsZWEiXSwiYW50IjpbImN1cnNlIiwiZGVudW5jaWF0aW9uIiwicmVwdWRpYXRpb24iXX0sImVudHJlYXQiOnsic3luIjpbImJlZyIsImltcGxvcmUiLCJiZXNlZWNoIiwicGxlYWQiLCJzb2xpY2l0IiwiaW1wb3J0dW5lIl0sImFudCI6WyJkZW1hbmQiLCJjb21tYW5kIiwiaW5zaXN0IiwicmVmdXNlIl19LCJkb2ZmIjp7InN5biI6WyJyZW1vdmUiLCJ0YWtlIG9mZiIsInNoZWQiLCJkaXNjYXJkIiwic3RyaXAiLCJ1bmNsb3RoZSJdLCJhbnQiOlsiZG9uIiwicHV0IG9uIiwid2VhciIsImFzc3VtZSJdfSwiZW5taXR5Ijp7InN5biI6WyJob3N0aWxpdHkiLCJhbmltb3NpdHkiLCJhbnRhZ29uaXNtIiwicmFuY29yIiwiaGF0cmVkIiwibWFsZXZvbGVuY2UiXSwiYW50IjpbImZyaWVuZHNoaXAiLCJhbWl0eSIsImhhcm1vbnkiLCJnb29kd2lsbCJdfSwiZmFpbiI6eyJzeW4iOlsiZ2xhZGx5Iiwid2lsbGluZ2x5IiwiZWFnZXJseSIsInJlYWRpbHkiLCJoYXBwaWx5IiwiY29udGVudGVkbHkiXSwiYW50IjpbInJlbHVjdGFudGx5IiwidW53aWxsaW5nbHkiLCJncnVkZ2luZ2x5Il19LCJwZXJ2ZXJzZSI6eyJzeW4iOlsiY29udHJhcnkiLCJvYnN0aW5hdGUiLCJ3YXl3YXJkIiwic3R1YmJvcm4iLCJoZWFkc3Ryb25nIiwid2lsbGZ1bCJdLCJhbnQiOlsiY29tcGxpYW50IiwiYWdyZWVhYmxlIiwidHJhY3RhYmxlIiwiZG9jaWxlIl19LCJpbXB1dGUiOnsic3luIjpbImF0dHJpYnV0ZSIsImFzY3JpYmUiLCJhc3NpZ24iLCJjcmVkaXQiLCJhY2NyZWRpdCIsImNoYXJnZSJdLCJhbnQiOlsiZXhvbmVyYXRlIiwiYWJzb2x2ZSIsImRpc2Fzc29jaWF0ZSJdfSwic2FsbG93Ijp7InN5biI6WyJwYWxlIiwieWVsbG93aXNoIiwid2FuIiwicGFzdHJ5IiwicGFsbGlkIiwiYXNoZW4iXSwiYW50IjpbInJvc3kiLCJydWRkeSIsImZsdXNoZWQiLCJoZWFsdGh5Il19LCJyYW5jb3IiOnsic3luIjpbImJpdHRlcm5lc3MiLCJzcGl0ZSIsInJlc2VudG1lbnQiLCJtYWxpY2UiLCJhbmltb3NpdHkiLCJncnVkZ2UiXSwiYW50IjpbImdvb2R3aWxsIiwia2luZG5lc3MiLCJiZW5ldm9sZW5jZSIsImNvcmRpYWxpdHkiXX0sImxhbWVudGFibGUiOnsic3luIjpbInJlZ3JldHRhYmxlIiwiZGVwbG9yYWJsZSIsInBpdGlmdWwiLCJzb3Jyb3dmdWwiLCJncmlldm91cyIsIndvZWZ1bCJdLCJhbnQiOlsiZm9ydHVuYXRlIiwiam95ZnVsIiwiZGVsaWdodGZ1bCIsInByYWlzZXdvcnRoeSJdfSwic2N1cnZ5Ijp7InN5biI6WyJjb250ZW1wdGlibGUiLCJkZXNwaWNhYmxlIiwidmlsZSIsIm1lYW4iLCJiYXNlIiwiaWdub2JsZSJdLCJhbnQiOlsiaG9ub3JhYmxlIiwibm9ibGUiLCJyZXNwZWN0YWJsZSIsImFkbWlyYWJsZSJdfSwia25hdmUiOnsic3luIjpbInJvZ3VlIiwic2NvdW5kcmVsIiwidmlsbGFpbiIsInJhc2NhbCIsIm1pc2NyZWFudCIsInJlcHJvYmF0ZSJdLCJhbnQiOlsiaGVybyIsInNhaW50IiwiZ2VudGxlbWFuIiwicGFyYWdvbiJdfSwiZmVpZ24iOnsic3luIjpbInByZXRlbmQiLCJzaW11bGF0ZSIsImZha2UiLCJhZmZlY3QiLCJkaXNzZW1ibGUiLCJjb3VudGVyZmVpdCJdLCJhbnQiOlsiZ2VudWluZSIsImF1dGhlbnRpYyIsInJlYWwiLCJzaW5jZXJlIl19LCJwb3VsdGljZSI6eyJzeW4iOlsiY29tcHJlc3MiLCJkcmVzc2luZyIsInBsYXN0ZXIiLCJvaW50bWVudCIsImJhbG0iLCJzYWx2ZSJdLCJhbnQiOltdfSwiY291bnRlcnZhaWwiOnsic3luIjpbIm9mZnNldCIsImNvdW50ZXJiYWxhbmNlIiwiY29tcGVuc2F0ZSIsIm5ldXRyYWxpemUiLCJjb3VudGVyYWN0IiwiYmFsYW5jZSJdLCJhbnQiOlsiaW50ZW5zaWZ5Iiwid29yc2VuIiwiZXhhY2VyYmF0ZSJdfSwiZG91YmxldCI6eyJzeW4iOlsiamFja2V0IiwidmVzdCIsInR1bmljIiwiY29hdCIsImplcmtpbiIsImdhcm1lbnQiXSwiYW50IjpbXX0sIm1pbnN0cmVsIjp7InN5biI6WyJtdXNpY2lhbiIsImJhcmQiLCJzaW5nZXIiLCJ0cm91YmFkb3VyIiwicG9ldCIsImVudGVydGFpbmVyIl0sImFudCI6W119LCJmb3JiZWFyIjp7InN5biI6WyJyZWZyYWluIiwiYWJzdGFpbiIsImRlc2lzdCIsImNlYXNlIiwiYXZvaWQiLCJyZXNpc3QiXSwiYW50IjpbImluZHVsZ2UiLCJwZXJzaXN0IiwiY29udGludWUiLCJ5aWVsZCJdfSwiZWZmZW1pbmF0ZSI6eyJzeW4iOlsidW5tYW5seSIsImZlbWluaW5lIiwid29tYW5pc2giLCJzb2Z0IiwiZGVsaWNhdGUiLCJ3ZWFrIl0sImFudCI6WyJtYXNjdWxpbmUiLCJtYW5seSIsInZpcmlsZSIsInN0cm9uZyJdfSwiZGV4dGVyaXR5Ijp7InN5biI6WyJza2lsbCIsImFnaWxpdHkiLCJhZHJvaXRuZXNzIiwibmltYmxlbmVzcyIsInByb3dlc3MiLCJmaW5lc3NlIl0sImFudCI6WyJjbHVtc2luZXNzIiwiaW5lcHRpdHVkZSIsImF3a3dhcmRuZXNzIiwic2xvd25lc3MiXX0sImFtb3JvdXMiOnsic3luIjpbInJvbWFudGljIiwicGFzc2lvbmF0ZSIsImxvdmluZyIsInRlbmRlciIsImFyZGVudCIsImRldm90ZWQiXSwiYW50IjpbImNvbGQiLCJpbmRpZmZlcmVudCIsImZyaWdpZCIsImRldGFjaGVkIl19LCJnYXJpc2giOnsic3luIjpbImdhdWR5IiwiZmxhc2h5Iiwic2hvd3kiLCJsdXJpZCIsImJyYXNzeSIsInRhd2RyeSJdLCJhbnQiOlsic3VidGxlIiwibXV0ZWQiLCJlbGVnYW50IiwidGFzdGVmdWwiXX0sImJpZXIiOnsic3luIjpbImNvZmZpbiIsImNhdGFmYWxxdWUiLCJoZWFyc2UiLCJwYWxsIiwibGl0dGVyIiwiZnVuZXJhbCBwbGF0Zm9ybSJdLCJhbnQiOltdfSwicHVyZ2F0b3J5Ijp7InN5biI6WyJsaW1ibyIsInRvcm1lbnQiLCJzdWZmZXJpbmciLCJoZWxsIiwiYWdvbnkiLCJleHBpYXRpb24iXSwiYW50IjpbInBhcmFkaXNlIiwiaGVhdmVuIiwiYmxpc3MiLCJ1dG9waWEiXX0sImNhcnJpb24iOnsic3luIjpbImNvcnBzZSIsInJlbWFpbnMiLCJkZWNheSIsIm9mZmFsIiwicHV0cmVmYWN0aW9uIiwicm90Il0sImFudCI6W119LCJkZW5vdGUiOnsic3luIjpbImluZGljYXRlIiwic2lnbmlmeSIsInJlcHJlc2VudCIsIm1lYW4iLCJzeW1ib2xpemUiLCJkZXNpZ25hdGUiXSwiYW50IjpbImNvbmNlYWwiLCJoaWRlIiwibWlzcmVwcmVzZW50Il19LCJhZG8iOnsic3luIjpbImZ1c3MiLCJjb21tb3Rpb24iLCJ1cHJvYXIiLCJodWJidWIiLCJ0cm91YmxlIiwic3RpciJdLCJhbnQiOlsiY2FsbSIsInBlYWNlIiwicXVpZXQiLCJzdGlsbG5lc3MiXX0sImpvY3VuZCI6eyJzeW4iOlsiY2hlZXJmdWwiLCJtZXJyeSIsImpveWZ1bCIsImpvbGx5IiwiZ2xlZWZ1bCIsImxpZ2h0aGVhcnRlZCJdLCJhbnQiOlsic2FkIiwiZ2xvb215Iiwic29ycm93ZnVsIiwic29tYmVyIl19LCJhYmhvciI6eyJzeW4iOlsiZGV0ZXN0IiwibG9hdGhlIiwiZGVzcGlzZSIsImhhdGUiLCJleGVjcmF0ZSIsImFib21pbmF0ZSJdLCJhbnQiOlsibG92ZSIsImFkb3JlIiwiY2hlcmlzaCIsImFkbWlyZSJdfSwiYWJzb2x2ZSI6eyJzeW4iOlsiZXhvbmVyYXRlIiwiYWNxdWl0IiwiZXhjdWxwYXRlIiwicGFyZG9uIiwiZm9yZ2l2ZSIsInZpbmRpY2F0ZSJdLCJhbnQiOlsiY29uZGVtbiIsImNvbnZpY3QiLCJibGFtZSIsInB1bmlzaCJdfSwiaW51bmRhdGlvbiI6eyJzeW4iOlsiZmxvb2QiLCJkZWx1Z2UiLCJ0b3JyZW50Iiwib3ZlcmZsb3ciLCJhdmFsYW5jaGUiLCJzcGF0ZSJdLCJhbnQiOlsiZHJvdWdodCIsInRyaWNrbGUiLCJzY2FyY2l0eSJdfSwicGVuc2l2ZSI6eyJzeW4iOlsidGhvdWdodGZ1bCIsInJlZmxlY3RpdmUiLCJjb250ZW1wbGF0aXZlIiwibWVkaXRhdGl2ZSIsInJ1bWluYXRpdmUiLCJkcmVhbXkiXSwiYW50IjpbImNhcmVmcmVlIiwidGhvdWdodGxlc3MiLCJ1bmNvbmNlcm5lZCIsImZyaXZvbG91cyJdfSwiYXJiaXRyYXRlIjp7InN5biI6WyJtZWRpYXRlIiwiYWRqdWRpY2F0ZSIsInNldHRsZSIsImRlY2lkZSIsImludGVyY2VkZSIsImNvbmNpbGlhdGUiXSwiYW50IjpbInByb3Zva2UiLCJhZ2dyYXZhdGUiLCJpbnN0aWdhdGUiXX0sInN1cmNlYXNlIjp7InN5biI6WyJjZXNzYXRpb24iLCJzdG9wIiwiaGFsdCIsInRlcm1pbmF0aW9uIiwiZW5kIiwicGF1c2UiXSwiYW50IjpbImNvbnRpbnVhdGlvbiIsInJlc3VtcHRpb24iLCJwZXJzaXN0ZW5jZSJdfSwic3VwcGxlIjp7InN5biI6WyJmbGV4aWJsZSIsInBsaWFudCIsImxpbWJlciIsImxpdGhlIiwiYWdpbGUiLCJsaXNzb21lIl0sImFudCI6WyJzdGlmZiIsInJpZ2lkIiwiaW5mbGV4aWJsZSIsInN0dWJib3JuIl19LCJraW5kcmVkIjp7InN5biI6WyJmYW1pbHkiLCJyZWxhdGl2ZXMiLCJraW4iLCJyZWxhdGlvbnMiLCJjbGFuIiwidHJpYmUiXSwiYW50IjpbInN0cmFuZ2VyIiwib3V0c2lkZXIiLCJmb3JlaWduZXIiXX0sImJlaGVzdCI6eyJzeW4iOlsiY29tbWFuZCIsIm9yZGVyIiwiZGlyZWN0aXZlIiwiaW5zdHJ1Y3Rpb24iLCJtYW5kYXRlIiwiZGVjcmVlIl0sImFudCI6WyJyZXF1ZXN0Iiwic3VnZ2VzdGlvbiIsInBsZWEiXX0sImVuam9pbiI6eyJzeW4iOlsiaW5zdHJ1Y3QiLCJkaXJlY3QiLCJjb21tYW5kIiwib3JkZXIiLCJjaGFyZ2UiLCJ1cmdlIl0sImFudCI6WyJmb3JiaWQiLCJwcm9oaWJpdCIsImJhbiIsImRpc3N1YWRlIl19LCJ3YXl3YXJkIjp7InN5biI6WyJ3aWxsZnVsIiwiaGVhZHN0cm9uZyIsInN0dWJib3JuIiwib2JzdGluYXRlIiwicmViZWxsaW91cyIsImRpc29iZWRpZW50Il0sImFudCI6WyJvYmVkaWVudCIsImNvbXBsaWFudCIsImRvY2lsZSIsInRyYWN0YWJsZSJdfSwib3Jpc29uIjp7InN5biI6WyJwcmF5ZXIiLCJzdXBwbGljYXRpb24iLCJwZXRpdGlvbiIsImludm9jYXRpb24iLCJkZXZvdGlvbiIsInBsZWEiXSwiYW50IjpbImN1cnNlIiwiYmxhc3BoZW15Il19LCJhY2N1cnNlZCI6eyJzeW4iOlsiY3Vyc2VkIiwiZGFtbmVkIiwiZG9vbWVkIiwiY29uZGVtbmVkIiwidW5ob2x5IiwiaGV4ZWQiXSwiYW50IjpbImJsZXNzZWQiLCJob2x5Iiwic2FjcmVkIiwiZm9ydHVuYXRlIl19LCJiZWd1aWxlIjp7InN5biI6WyJkZWNlaXZlIiwidHJpY2siLCJjaGFybSIsIm1pc2xlYWQiLCJkZWx1ZGUiLCJlbnRpY2UiXSwiYW50IjpbImVubGlnaHRlbiIsInVuZGVjZWl2ZSIsImRpc2lsbHVzaW9uIl19LCJkZXRlc3RhYmxlIjp7InN5biI6WyJhYmhvcnJlbnQiLCJkZXNwaWNhYmxlIiwibG9hdGhzb21lIiwicmVwdWduYW50IiwiYWJvbWluYWJsZSIsImhhdGVmdWwiXSwiYW50IjpbImFkbWlyYWJsZSIsImxvdmFibGUiLCJwcmFpc2V3b3J0aHkiLCJkZWxpZ2h0ZnVsIl19LCJkaXJnZSI6eyJzeW4iOlsibGFtZW50IiwiZWxlZ3kiLCJyZXF1aWVtIiwidGhyZW5vZHkiLCJmdW5lcmFsIHNvbmciLCJtb3VybmluZyBoeW1uIl0sImFudCI6WyJhbnRoZW0iLCJjZWxlYnJhdGlvbiIsInBhZWFuIl19LCJwZXN0aWxlbnQiOnsic3luIjpbImRlYWRseSIsInBlcm5pY2lvdXMiLCJ0b3hpYyIsImRlc3RydWN0aXZlIiwibm94aW91cyIsImJhbmVmdWwiXSwiYW50IjpbImhlYWx0aHkiLCJzYWx1dGFyeSIsImJlbmVmaWNpYWwiLCJ3aG9sZXNvbWUiXX0sInByZXNhZ2UiOnsic3luIjpbImZvcmVzaGFkb3ciLCJwb3J0ZW5kIiwiYXVndXIiLCJmb3JldGVsbCIsInByb3BoZXN5IiwiZm9yZXdhcm4iXSwiYW50IjpbXX0sImFwb3RoZWNhcnkiOnsic3luIjpbInBoYXJtYWNpc3QiLCJjaGVtaXN0IiwiZHJ1Z2dpc3QiLCJkaXNwZW5zZXIiLCJhbGNoZW1pc3QiXSwiYW50IjpbXX0sInBlbnVyeSI6eyJzeW4iOlsicG92ZXJ0eSIsImRlc3RpdHV0aW9uIiwiaW5kaWdlbmNlIiwibmVlZGluZXNzIiwiaW1wb3ZlcmlzaG1lbnQiLCJiZWdnYXJ5Il0sImFudCI6WyJ3ZWFsdGgiLCJhZmZsdWVuY2UiLCJwcm9zcGVyaXR5IiwicmljaGVzIl19LCJkdWNhdCI6eyJzeW4iOlsiY29pbiIsIm1vbmV5IiwiY3VycmVuY3kiLCJnb2xkIHBpZWNlIiwidGVuZGVyIl0sImFudCI6W119LCJpbmV4b3JhYmxlIjp7InN5biI6WyJyZWxlbnRsZXNzIiwidW5hdm9pZGFibGUiLCJpbmVzY2FwYWJsZSIsInVuc3RvcHBhYmxlIiwiaW1wbGFjYWJsZSIsInVucmVsZW50aW5nIl0sImFudCI6WyJtZXJjaWZ1bCIsImZsZXhpYmxlIiwicmVsZW50aW5nIiwiYXZvaWRhYmxlIl19LCJtYXciOnsic3luIjpbImphd3MiLCJndWxsZXQiLCJ0aHJvYXQiLCJzdG9tYWNoIiwiY2F2aXR5IiwiYWJ5c3MiXSwiYW50IjpbXX0sImFwcHJlaGVuZCI6eyJzeW4iOlsiYXJyZXN0Iiwic2VpemUiLCJjYXB0dXJlIiwiZGV0YWluIiwiY2F0Y2giLCJ0YWtlIl0sImFudCI6WyJyZWxlYXNlIiwiZnJlZSIsImxpYmVyYXRlIiwiZGlzbWlzcyJdfSwicGVydXNlIjp7InN5biI6WyJleGFtaW5lIiwic3R1ZHkiLCJzY3J1dGluaXplIiwiaW5zcGVjdCIsInNjYW4iLCJyZWFkIl0sImFudCI6WyJza2ltIiwibmVnbGVjdCIsIm92ZXJsb29rIl19LCJpbnRlciI6eyJzeW4iOlsiYnVyeSIsImVudG9tYiIsImluaHVtZSIsInNlcHVsY2hyZSIsImxheSB0byByZXN0IiwiZW50b21iIl0sImFudCI6WyJleGh1bWUiLCJkaXNpbnRlciIsInVuZWFydGgiXX0sImVuc2lnbiI6eyJzeW4iOlsiZmxhZyIsImJhbm5lciIsInN0YW5kYXJkIiwiZW1ibGVtIiwic3ltYm9sIiwicGVubmFudCJdLCJhbnQiOltdfSwiaW5hdXNwaWNpb3VzIjp7InN5biI6WyJ1bmx1Y2t5IiwidW5wcm9taXNpbmciLCJvbWlub3VzIiwidW5mYXZvcmFibGUiLCJkaXJlIiwiaWxsLWZhdGVkIl0sImFudCI6WyJhdXNwaWNpb3VzIiwiZmF2b3JhYmxlIiwicHJvbWlzaW5nIiwibHVja3kiXX0sImRpc2Nlcm4iOnsic3luIjpbInBlcmNlaXZlIiwiZGV0ZWN0IiwiZGlzdGluZ3Vpc2giLCJyZWNvZ25pemUiLCJpZGVudGlmeSIsImRpc2NyaW1pbmF0ZSJdLCJhbnQiOlsibWlzcyIsIm92ZXJsb29rIiwiaWdub3JlIiwiY29uZnVzZSJdfSwic2VwdWxjaGVyIjp7InN5biI6WyJ0b21iIiwiZ3JhdmUiLCJ2YXVsdCIsImNyeXB0IiwibWF1c29sZXVtIiwiYnVyaWFsIGNoYW1iZXIiXSwiYW50IjpbXX0sInRod2FydCI6eyJzeW4iOlsiZm9pbCIsImZydXN0cmF0ZSIsImhpbmRlciIsIm9ic3RydWN0IiwiYmxvY2siLCJkZWZlYXQiXSwiYW50IjpbImFpZCIsImFzc2lzdCIsImZhY2lsaXRhdGUiLCJwcm9tb3RlIl19LCJhbWJpZ3VpdHkiOnsic3luIjpbInVuY2VydGFpbnR5Iiwib2JzY3VyaXR5IiwidmFndWVuZXNzIiwiZXF1aXZvY2F0aW9uIiwiZG91YnQiLCJhbWJpdmFsZW5jZSJdLCJhbnQiOlsiY2xhcml0eSIsImNlcnRhaW50eSIsInByZWNpc2lvbiIsImV4cGxpY2l0bmVzcyJdfX0="))));
+
+// ============================================================
+// REST OF THE JAVASCRIPT (DO NOT MODIFY)
+// ============================================================
+const LS = {
+  get(key, fallback) {
+    try { const v = localStorage.getItem(key); return v !== null ? v : fallback; }
+    catch(e) { return fallback; }
+  },
+  set(key, val) {
+    try { localStorage.setItem(key, val); } catch(e) {}
+  }
+};
+
+function buildGroups() {
+  const n = VOCAB.length;
+  const wordsPerGroup = 10;
+  const numGroups = Math.ceil(n / wordsPerGroup);
+  const groups = [];
+  
+  for (let i = 0; i < numGroups; i++) {
+    const start = i * wordsPerGroup;
+    const end = Math.min(start + wordsPerGroup, n);
+    groups.push(VOCAB.slice(start, end));
+  }
+  
+  return groups;
+}
+
+const GROUPS = buildGroups();
+const NUM_GROUPS = GROUPS.length;
+
+const S = {
+  gIdx: 0,
+  wIdx: 0,
+  sentTab: 0,
+  starred: new Set(JSON.parse(LS.get('wtb_starred', '[]'))),
+  sentences: JSON.parse(LS.get('wtb_sentences', '{}')),
+  quiz: null,
+  quizDone: {},
+  sqQuiz: null,
+};
+
+function saveStarred() { LS.set('wtb_starred', JSON.stringify([...S.starred])); }
+function saveSentences() { LS.set('wtb_sentences', JSON.stringify(S.sentences)); }
+
+function escReg(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+function highlightWord(text, word) {
+  const e = escReg(word);
+  const re1 = new RegExp('\\b(' + e + ')\\b', 'gi');
+  if (re1.test(text)) return text.replace(re1, '<span class="hl">$1</span>');
+  const root = escReg(word.substring(0, Math.max(4, Math.floor(word.length * 0.72))));
+  const re2 = new RegExp('\\b(' + root + '\\w*)\\b', 'gi');
+  return text.replace(re2, '<span class="hl">$1</span>');
+}
+
+function blankWord(text, word) {
+  const blank = '<span class="blank">___________</span>';
+  const e = escReg(word);
+  const re1 = new RegExp('\\b' + e + '\\b', 'gi');
+  if (re1.test(text)) return text.replace(re1, blank);
+  const root = escReg(word.substring(0, Math.max(4, Math.floor(word.length * 0.72))));
+  const re2 = new RegExp('\\b' + root + '\\w*\\b', 'gi');
+  return text.replace(re2, blank);
+}
+
+function chapterShort(ch) {
+  const m = ch.match(/Part ([IVX]+)[,\s]+Chapter (\d+)/i);
+  if (m) return 'Pt.' + m[1] + ' · Ch.' + m[2];
+  return ch;
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+let toastTimer = null;
+function toast(msg, type = '') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'show' + (type ? ' ' + type : '');
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { t.className = ''; }, 2200);
+}
+
+let currentAudio = null; // Track currently playing audio
+
+function speak(word) {
+  if ('speechSynthesis' in window) {
+    // If audio is playing, stop it (toggle mute)
+    if (currentAudio) {
+      window.speechSynthesis.cancel();
+      currentAudio = null;
+      return;
+    }
+    // Start new audio
+    const u = new SpeechSynthesisUtterance(word);
+    u.lang = 'en-US'; u.rate = 0.85;
+    u.onend = () => { currentAudio = null; };
+    u.onerror = () => { currentAudio = null; };
+    currentAudio = u;
+    window.speechSynthesis.speak(u);
+  }
+
+// Audio for sentences - with toggle support
+function playCurrentSentenceAudio() {
+  try {
+    const sentEn = document.getElementById('sentEn');
+    if (sentEn) {
+      let text = sentEn.textContent;
+      if (text && text !== '—') {
+        text = text.replace(/<[^>]*>/g, '');
+        if (text.trim()) {
+          if ('speechSynthesis' in window) {
+            // Toggle: if audio is playing, stop it; otherwise play
+            if (currentAudio) {
+              window.speechSynthesis.cancel();
+              currentAudio = null;
+            } else {
+              const u = new SpeechSynthesisUtterance(text);
+              u.lang = 'en-US'; u.rate = 0.85;
+              u.onend = () => { currentAudio = null; };
+              u.onerror = () => { currentAudio = null; };
+              currentAudio = u;
+              window.speechSynthesis.speak(u);
+            }
+          }
+        }
+      }
+    }
+  } catch (e) { console.error('Audio error:', e); }
+}
+}
+
+function render() {
+  if (!GROUPS.length || !GROUPS[S.gIdx] || !GROUPS[S.gIdx][S.wIdx]) {
+    console.error('No data available');
+    return;
+  }
+  
+  const group = GROUPS[S.gIdx];
+  const entry = group[S.wIdx];
+  const isStarred = S.starred.has(entry.word);
+
+  document.getElementById('groupNumDisplay').textContent = (S.gIdx + 1) + ' / ' + NUM_GROUPS;
+  document.getElementById('prevGroupBtn').disabled = S.gIdx === 0;
+  document.getElementById('nextGroupBtn').disabled = S.gIdx === NUM_GROUPS - 1;
+  renderGroupDots();
+
+  document.getElementById('wordNumDisplay').textContent = S.wIdx + 1;
+  document.getElementById('groupSizeDisplay').textContent = group.length;
+  document.getElementById('prevWordBtn').disabled = S.wIdx === 0;
+  document.getElementById('nextWordBtn').disabled = S.wIdx === group.length - 1;
+
+  const sb = document.getElementById('starBtn');
+  sb.textContent = isStarred ? '★' : '☆';
+  sb.classList.toggle('starred', isStarred);
+
+  document.getElementById('wordDisplay').textContent = entry.word;
+  document.getElementById('pronDisplay').textContent = '[' + entry.pron + ']';
+  
+  // Remove any existing badge first to prevent duplicates
+  const oldBadge = document.querySelector('#pronDisplay + .badge-pos');
+  if (oldBadge) oldBadge.remove();
+  
+  // Create new badge
+  const posBadgeEl = document.createElement('span');
+  posBadgeEl.className = 'badge badge-pos';
+  posBadgeEl.textContent = '[' + (entry.part_of_speech || '') + ']';
+  posBadgeEl.style.display = 'inline-block';
+  posBadgeEl.style.marginLeft = '8px';
+  document.getElementById('pronDisplay').insertAdjacentElement('afterend', posBadgeEl);
+  
+  document.getElementById('defEn').textContent = entry.def_en;
+  document.getElementById('defZh').textContent = entry.def_zh;
+
+  document.getElementById('tabNovel').classList.toggle('active', S.sentTab === 0);
+  document.getElementById('tabAI').classList.toggle('active', S.sentTab === 1);
+
+  let sentEn, sentZh, sentSource;
+  if (S.sentTab === 0) {
+    sentEn = highlightWord(entry.quote_en, entry.word);
+    sentZh = entry.quote_zh;
+    sentSource = '— ' + BOOK_CONFIG.author + ', <em>' + BOOK_CONFIG.bookName + '</em> · ' + entry.chapter;
+  } else {
+    sentEn = highlightWord(entry.ex_en, entry.word);
+    sentZh = entry.ex_zh;
+    sentSource = '— Thematically aligned with <em>' + BOOK_CONFIG.bookName + '</em>';
+  }
+  document.getElementById('sentEn').innerHTML = sentEn;
+  document.getElementById('sentZh').textContent = sentZh;
+  document.getElementById('sentSource').innerHTML = sentSource;
+
+  const sa = SYNAN[entry.word] || { syn: [], ant: [] };
+  document.getElementById('synChips').innerHTML = sa.syn.map(w => `<span class="synan-chip syn">${w}</span>`).join('');
+  document.getElementById('antChips').innerHTML = sa.ant.map(w => `<span class="synan-chip ant">${w}</span>`).join('');
+  document.getElementById('synanBlock').style.display = (sa.syn.length || sa.ant.length) ? 'flex' : 'none';
+
+  const tabFlash = document.getElementById('tabFlashcard'); if (tabFlash) tabFlash.classList.toggle('active', S.sentTab === 2);
+  const flashcardContainer = document.getElementById('flashcardContainer');
+  if (flashcardContainer) {
+    flashcardContainer.style.display = S.sentTab === 2 ? 'block' : 'none';
+    if (S.sentTab === 2) renderFlashcard(); //renderFlashcard();
+  }
+  document.getElementById('sentenceContent').style.display = S.sentTab === 2 ? 'none' : 'block';
+  if (S.sentTab === 2) renderFlashcard(); //renderFlashcard();
+
+  renderStarredSection();
+  renderMySentences();
+
+  document.getElementById('quizStartDesc').textContent =
+    'Test yourself on Group ' + (S.gIdx + 1) + '. Choose the word, then spell it.';
+  const done = S.quizDone[S.gIdx];
+  const badge = document.getElementById('quizScoreBadge');
+  if (done !== undefined) {
+    badge.style.display = 'inline-block';
+    badge.textContent = done.score + ' / ' + done.total + ' correct';
+  } else {
+    badge.style.display = 'none';
+  }
+
+  const cnt = S.starred.size;
+  document.getElementById('starredCount').textContent = cnt;
+  document.getElementById('starredCountHeader').textContent = cnt;
+}
+
+function renderGroupDots() {
+  const wrap = document.getElementById('groupDots');
+  wrap.innerHTML = '';
+  for (let i = 0; i < NUM_GROUPS; i++) {
+    const d = document.createElement('div');
+    d.className = 'group-dot' +
+      (i === S.gIdx ? ' active' : '') +
+      (S.quizDone[i] !== undefined && i !== S.gIdx ? ' done' : '');
+    wrap.appendChild(d);
+  }
+}
+
+function renderStarredSection() {
+  const list = document.getElementById('starredList');
+  list.innerHTML = '';
+  if (S.starred.size === 0) {
+    list.innerHTML = '<div class="starred-empty">No starred words yet. Tap ☆ on any word to save it.</div>';
+  } else {
+    [...S.starred].forEach(word => {
+      const idx = VOCAB.findIndex(v => v.word === word);
+      if (idx === -1) return;
+      const chip = document.createElement('button');
+      chip.className = 'starred-chip';
+      chip.textContent = word;
+      chip.title = VOCAB[idx].def_en;
+      chip.addEventListener('click', () => navigateToWord(idx));
+      list.appendChild(chip);
+    });
+  }
+  renderStarredQuizStart();
+}
+
+function renderMySentences() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  const sents = S.sentences[word] || [];
+  const max = 3;
+
+  const counter = document.getElementById('mySentCounter');
+  counter.textContent = sents.length + ' / ' + max;
+  counter.className = 'my-sent-counter' + (sents.length >= max ? ' full' : '');
+
+  const input = document.getElementById('mySentInput');
+  const saveBtn = document.getElementById('mySentSaveBtn');
+  input.disabled = sents.length >= max;
+  saveBtn.disabled = sents.length >= max;
+  input.placeholder = sents.length >= max
+    ? 'Maximum 3 sentences saved ✓'
+    : 'Write your own sentence using "' + word + '"…';
+
+  const list = document.getElementById('mySentList');
+  list.innerHTML = '';
+  sents.forEach((text, i) => {
+    const item = document.createElement('div');
+    item.className = 'my-sent-item';
+    item.innerHTML =
+      '<span class="my-sent-num">' + (i + 1) + '</span>' +
+      '<span class="my-sent-text">' + escapeHTML(text) + '</span>' +
+      '<button class="my-sent-del" data-idx="' + i + '" title="Delete">✕</button>';
+    item.querySelector('.my-sent-del').addEventListener('click', () => deleteSentence(word, i));
+    list.appendChild(item);
+  });
+}
+
+function escapeHTML(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function addSentence() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  const input = document.getElementById('mySentInput');
+  const text = input.value.trim();
+  if (!text) { toast('Please write a sentence first.', ''); return; }
+  if (!S.sentences[word]) S.sentences[word] = [];
+  if (S.sentences[word].length >= 3) { toast('Max 3 sentences per word.', ''); return; }
+  const wordLower = word.toLowerCase();
+  const rootLower = wordLower.substring(0, Math.max(4, Math.floor(wordLower.length * 0.72)));
+  if (!text.toLowerCase().includes(rootLower)) {
+    toast('💡 Try to use "' + word + '" in your sentence!', '');
+  }
+  S.sentences[word].push(text);
+  saveSentences();
+  input.value = '';
+  renderMySentences();
+  toast('✓ Sentence saved!', 'good');
+}
+
+function deleteSentence(word, idx) {
+  if (!S.sentences[word]) return;
+  S.sentences[word].splice(idx, 1);
+  if (S.sentences[word].length === 0) delete S.sentences[word];
+  saveSentences();
+  renderMySentences();
+}
+
+function renderStarredQuizStart() {
+  const count = S.starred.size;
+  const canStart = count >= 5;
+  document.getElementById('sqDesc').textContent = canStart
+    ? 'Quiz yourself on all ' + count + ' starred words.'
+    : 'Keep starring words to unlock your personal quiz.';
+  document.getElementById('sqStartBtn').style.display = canStart ? 'inline-block' : 'none';
+  document.getElementById('sqUnlockHint').style.display = canStart ? 'none' : 'block';
+  document.getElementById('sqStarredCount').textContent = count;
+  document.getElementById('sqStartArea').style.display = 'block';
+  document.getElementById('sqQuestionArea').style.display = 'none';
+  document.getElementById('sqResult').style.display = 'none';
+}
+
+function startStarredQuiz() {
+  const starredWords = [...S.starred];
+  if (starredWords.length < 5) return;
+
+  const entries = starredWords
+    .map(w => VOCAB.find(v => v.word === w))
+    .filter(Boolean);
+
+  const questions = shuffle(entries);
+  S.sqQuiz = { questions, qIdx: 0, score: 0, answered: false };
+
+  document.getElementById('sqStartArea').style.display = 'none';
+  document.getElementById('sqQuestionArea').style.display = 'block';
+  document.getElementById('sqResult').style.display = 'none';
+  renderSQQuestion();
+}
+
+function renderSQQuestion() {
+  const q = S.sqQuiz;
+  const entry = q.questions[q.qIdx];
+  const total = q.questions.length;
+
+  document.getElementById('sqQNum').textContent = 'Question ' + (q.qIdx + 1) + ' / ' + total;
+  document.getElementById('sqProgressFill').style.width = ((q.qIdx / total) * 100) + '%';
+  document.getElementById('sqSentence').innerHTML = blankWord(entry.quote_en, entry.word);
+
+  const pool = [...S.starred].filter(w => w !== entry.word);
+  const starredDistractors = shuffle(pool).slice(0, 3);
+  const needed = 3 - starredDistractors.length;
+  let extra = [];
+  if (needed > 0) {
+    extra = shuffle(VOCAB.map(v => v.word).filter(w => w !== entry.word && !S.starred.has(w))).slice(0, needed);
+  }
+  const choices = shuffle([entry.word, ...starredDistractors, ...extra].slice(0, 4));
+
+  const labels = ['A', 'B', 'C', 'D'];
+  const container = document.getElementById('sqChoices');
+  container.innerHTML = '';
+  choices.forEach((word, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'choice-btn';
+    btn.innerHTML = '<span class="choice-label">' + labels[i] + '</span>' + word;
+    btn.dataset.word = word;
+    btn.addEventListener('click', () => checkSQAnswer(word, entry.word, entry.def_en));
+    container.appendChild(btn);
+  });
+
+  const fb = document.getElementById('sqFeedback');
+  fb.style.display = 'none';
+  fb.className = 'quiz-feedback';
+  document.getElementById('sqNextBtn').style.display = 'none';
+  q.answered = false;
+}
+
+function checkSQAnswer(chosen, correct, defHint) {
+  if (S.sqQuiz.answered) return;
+  S.sqQuiz.answered = true;
+
+  document.querySelectorAll('#sqChoices .choice-btn').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.word === correct) btn.classList.add('correct');
+    else if (btn.dataset.word === chosen && chosen !== correct) btn.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('sqFeedback');
+  if (chosen === correct) {
+    S.sqQuiz.score++;
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Correct! "' + correct + '" — ' + defHint.split(';')[0] + '.';
+  } else {
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The answer is "' + correct + '" — ' + defHint.split(';')[0] + '.';
+  }
+  fb.style.display = 'block';
+
+  const nextBtn = document.getElementById('sqNextBtn');
+  const isLast = S.sqQuiz.qIdx === S.sqQuiz.questions.length - 1;
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function sqNext() {
+  const q = S.sqQuiz;
+  if (q.qIdx < q.questions.length - 1) {
+    q.qIdx++;
+    renderSQQuestion();
+  } else {
+    const total = q.questions.length;
+    const pct = Math.round((q.score / total) * 100);
+    const emoji = pct >= 80 ? '🎉' : pct >= 60 ? '👍' : '📚';
+    document.getElementById('sqQuestionArea').style.display = 'none';
+    document.getElementById('sqResult').style.display = 'block';
+    document.getElementById('sqProgressFill').style.width = '100%';
+    document.getElementById('sqResultScore').textContent = emoji + ' ' + q.score + ' / ' + total;
+    document.getElementById('sqResultLabel').textContent =
+      pct >= 80 ? 'Excellent — your starred words are solid!' :
+      pct >= 60 ? 'Good progress. Review the ones you missed.' :
+                  'Keep studying — revisit your starred words.';
+  }
+}
+
+function goGroup(idx) {
+  S.gIdx = Math.max(0, Math.min(NUM_GROUPS - 1, idx));
+  S.wIdx = 0;
+  S.sentTab = 0;
+  resetQuizUI();
+  render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function goWord(idx) {
+  const group = GROUPS[S.gIdx];
+  S.wIdx = Math.max(0, Math.min(group.length - 1, idx));
+  S.sentTab = 0;
+  render();
+}
+
+function navigateToWord(vocabIdx) {
+  let cumulative = 0;
+  for (let g = 0; g < NUM_GROUPS; g++) {
+    if (vocabIdx < cumulative + GROUPS[g].length) {
+      S.gIdx = g;
+      S.wIdx = vocabIdx - cumulative;
+      S.sentTab = 0;
+      resetQuizUI();
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    cumulative += GROUPS[g].length;
+  }
+}
+
+function toggleStar() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  if (S.starred.has(word)) {
+    S.starred.delete(word);
+    toast('Removed from starred', '');
+  } else {
+    S.starred.add(word);
+    toast('⭐ Starred: ' + word, 'gold');
+  }
+  saveStarred();
+  render();
+}
+
+function resetQuizUI() {
+  S.quiz = null;
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+  document.getElementById('quizStartArea').style.display = 'block';
+  document.getElementById('quizQuestionArea').style.display = 'none';
+  document.getElementById('quizResult').style.display = 'none';
+}
+
+function startQuiz() {
+  const group = GROUPS[S.gIdx];
+  const questions = shuffle(group.map((entry, i) => ({ entry, groupIdx: i })));
+  S.quiz = {
+    questions,
+    qIdx: 0,
+    phase: 1,
+    score: 0,
+    spellScore: 0,
+    answered: false,
+  };
+  document.getElementById('quizStartArea').style.display = 'none';
+  document.getElementById('quizQuestionArea').style.display = 'block';
+  document.getElementById('quizResult').style.display = 'none';
+  renderQuestion();
+}
+
+function renderQuestion() {
+  const q = S.quiz;
+  const { entry } = q.questions[q.qIdx];
+  const total = q.questions.length;
+  const step = q.qIdx * 2 + (q.phase - 1);
+  const totalSteps = total * 2;
+
+  document.getElementById('quizQNum').textContent =
+    'Word ' + (q.qIdx + 1) + ' / ' + total + ' · ' + (q.phase === 1 ? 'Part 1: Choose' : 'Part 2: Spell');
+  document.getElementById('quizProgressFill').style.width = ((step / totalSteps) * 100) + '%';
+
+  document.getElementById('quizNextBtn').style.display = 'none';
+
+  if (q.phase === 1) {
+    document.getElementById('quizPhase1').style.display = 'block';
+    document.getElementById('quizPhase2').style.display = 'none';
+
+    document.getElementById('quizSentence').innerHTML = blankWord(entry.quote_en, entry.word);
+
+    const group = GROUPS[S.gIdx];
+    const distractors = shuffle(group.map(w => w.word).filter(w => w !== entry.word)).slice(0, 3);
+    const choices = shuffle([entry.word, ...distractors]);
+    const labels = ['A', 'B', 'C', 'D'];
+    const container = document.getElementById('quizChoices');
+    container.innerHTML = '';
+    choices.forEach((word, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'choice-btn';
+      btn.innerHTML = '<span class="choice-label">' + labels[i] + '</span>' + word;
+      btn.dataset.word = word;
+      btn.addEventListener('click', () => checkAnswer(word, entry.word));
+      container.appendChild(btn);
+    });
+
+    const fb = document.getElementById('quizFeedback');
+    fb.style.display = 'none';
+    fb.className = 'quiz-feedback';
+    q.answered = false;
+
+  } else {
+    document.getElementById('quizPhase1').style.display = 'none';
+    document.getElementById('quizPhase2').style.display = 'block';
+    renderQuizSpell(entry);
+  }
+}
+
+function renderQuizSpell(entry) {
+  const word = entry.word.toLowerCase();
+  document.getElementById('qSpellSentence').innerHTML = highlightWord(entry.ex_en, entry.word)
+    .replace(/<span class="hl">([^<]+)<\/span>/gi, '<span class="hl">_____<\/span>');
+
+  const boxes = document.getElementById('qSpellBoxes');
+  boxes.innerHTML = '';
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === '-') {
+      const sep = document.createElement('div');
+      sep.style.cssText = 'width:10px;display:flex;align-items:center;justify-content:center;color:var(--muted2);font-weight:900;font-size:1.2rem;';
+      sep.textContent = '-';
+      boxes.appendChild(sep);
+    } else {
+      const b = document.createElement('div');
+      b.className = 'spell-box' + (i === 0 ? ' cursor' : '');
+      b.dataset.idx = i;
+      boxes.appendChild(b);
+    }
+  }
+  const inp = document.getElementById('qSpellInput');
+  inp.value = '';
+  inp.placeholder = word.length + ' letters';
+  const fb = document.getElementById('qSpellFeedback');
+  fb.style.display = 'none';
+  fb.className = 'quiz-feedback';
+  document.getElementById('qSpellRevealBtn').style.display = 'block';
+  updateQSpellBoxes('');
+}
+
+function updateQSpellBoxes(typed) {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const word = entry.word.toLowerCase().replace(/-/g, '');
+  const t = typed.toLowerCase();
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  allBoxes.forEach((b, i) => {
+    b.className = 'spell-box';
+    if (i < t.length) { b.textContent = t[i]; b.classList.add('filled'); }
+    else { b.textContent = ''; if (i === t.length) b.classList.add('cursor'); }
+  });
+}
+
+function checkQuizSpelling() {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const word = entry.word.toLowerCase();
+  const typed = document.getElementById('qSpellInput').value.trim().toLowerCase();
+  const fb = document.getElementById('qSpellFeedback');
+  if (!typed) { toast('Type the word first!', ''); return; }
+
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  const wordClean = word.replace(/-/g, '');
+  const typedClean = typed.replace(/-/g, '');
+
+  if (typedClean === wordClean) {
+    S.quiz.spellScore++;
+    allBoxes.forEach(b => { b.className = 'spell-box correct'; });
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Perfect spelling!';
+    toast('✓ Spelled correctly!', 'good');
+  } else {
+    const wordArr = wordClean.split('');
+    allBoxes.forEach((b, i) => {
+      b.className = 'spell-box';
+      const ch = typedClean[i] || '';
+      b.textContent = ch || wordArr[i];
+      if (!ch) b.classList.add('wrong');
+      else if (ch === wordArr[i]) b.classList.add('correct');
+      else { b.classList.add('wrong'); b.textContent = ch; }
+    });
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The word is "' + entry.word + '".';
+  }
+  fb.style.display = 'block';
+  document.getElementById('qSpellRevealBtn').style.display = 'none';
+  const isLast = S.quiz.qIdx === S.quiz.questions.length - 1;
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next Word →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function checkAnswer(chosen, correct) {
+  if (S.quiz.answered) return;
+  S.quiz.answered = true;
+
+  const btns = document.querySelectorAll('.choice-btn');
+  btns.forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.word === correct) btn.classList.add('correct');
+    else if (btn.dataset.word === chosen && chosen !== correct) btn.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('quizFeedback');
+  if (chosen === correct) {
+    S.quiz.score++;
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Correct! "' + correct + '" is right.';
+  } else {
+    // Auto-star word on wrong answer
+    S.starred.add(correct);
+    saveStarred();
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The answer is "' + correct + '".';
+  }
+  fb.style.display = 'block';
+
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = 'Next: Spell It →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function quizNext() {
+  const q = S.quiz;
+  const total = q.questions.length;
+  if (q.phase === 1) {
+    q.phase = 2;
+    renderQuestion();
+  } else if (q.qIdx < total - 1) {
+    q.qIdx++;
+    q.phase = 1;
+    renderQuestion();
+  } else {
+    const mcPct = Math.round((q.score / total) * 100);
+    const spPct = Math.round((q.spellScore / total) * 100);
+    const combined = q.score + q.spellScore;
+    const combMax = total * 2;
+    const emoji = mcPct >= 80 ? '🎉' : mcPct >= 60 ? '👍' : '📚';
+    document.getElementById('quizQuestionArea').style.display = 'none';
+    document.getElementById('quizResult').style.display = 'block';
+    document.getElementById('quizProgressFill').style.width = '100%';
+    document.getElementById('quizResultScore').textContent = emoji + ' ' + combined + ' / ' + combMax;
+    document.getElementById('quizResultLabel').textContent =
+      '📖 Choose: ' + q.score + '/' + total + '  ·  ✏️ Spell: ' + q.spellScore + '/' + total + (
+        mcPct >= 80 && spPct >= 80 ? '  —  Outstanding!' :
+        mcPct >= 60 ? '  —  Good work! Review the ones you missed.' :
+        '  —  Keep studying — you\'ll get there!'
+      );
+    S.quizDone[S.gIdx] = { score: combined, total: combMax };
+    render();
+  }
+}
+
+
+
+function updateBoxes(typed) {
+  const entry = GROUPS[S.gIdx][S.wIdx];
+  const word = entry.word.toLowerCase().replace(/-/g, '');
+  const t = typed.toLowerCase();
+  const allBoxes = document.querySelectorAll('.spell-box');
+
+  allBoxes.forEach((b, i) => {
+    b.className = 'spell-box';
+    if (i < t.length) {
+      b.textContent = t[i];
+      b.classList.add('filled');
+    } else {
+      b.textContent = '';
+      if (i === t.length) b.classList.add('cursor');
+    }
+  });
+}
+
+function checkSpelling() {
+  const entry = GROUPS[S.gIdx][S.wIdx];
+  const word = entry.word.toLowerCase();
+  const typed = document.getElementById('spellInput').value.trim().toLowerCase();
+  const fb = document.getElementById('spellFeedback');
+
+  if (!typed) { toast('Type the word first!', ''); return; }
+
+  const allBoxes = document.querySelectorAll('.spell-box');
+  const wordClean = word.replace(/-/g, '');
+  const typedClean = typed.replace(/-/g, '');
+
+  if (typedClean === wordClean) {
+    allBoxes.forEach(b => { b.className = 'spell-box correct'; b.textContent = b.textContent || ''; });
+    fb.className = 'spell-feedback ok';
+    fb.textContent = '✓ Correct! You spelled "' + entry.word + '" perfectly.';
+    toast('✓ Spelled correctly!', 'good');
+  } else {
+    const wordArr = wordClean.split('');
+    allBoxes.forEach((b, i) => {
+      b.className = 'spell-box';
+      const ch = typedClean[i] || '';
+      b.textContent = ch || wordArr[i];
+      if (!ch)          b.classList.add('wrong');
+      else if (ch === wordArr[i]) b.classList.add('correct');
+      else              { b.classList.add('wrong'); b.textContent = ch; }
+    });
+    fb.className = 'spell-feedback err';
+    fb.textContent = '✗ Not quite. The word is "' + entry.word + '".';
+  }
+  fb.style.display = 'block';
+  document.getElementById('spellRevealBtn').style.display = 'none';
+}
+
+document.getElementById('prevGroupBtn').addEventListener('click', () => goGroup(S.gIdx - 1));
+document.getElementById('nextGroupBtn').addEventListener('click', () => goGroup(S.gIdx + 1));
+document.getElementById('prevWordBtn').addEventListener('click', () => goWord(S.wIdx - 1));
+document.getElementById('nextWordBtn').addEventListener('click', () => goWord(S.wIdx + 1));
+document.getElementById('starBtn').addEventListener('click', toggleStar);
+  document.getElementById('speakBtn').addEventListener('click', () => speak(GROUPS[S.gIdx][S.wIdx].word));
+  const sentenceBtn = document.getElementById('sentenceHearBtn');
+  if (sentenceBtn) {
+    sentenceBtn.addEventListener('click', () => {
+      const sentEn = document.getElementById('sentEn');
+      if (sentEn) {
+        let text = sentEn.textContent;
+        if (text && text !== '—') {
+          text = text.replace(/<[^>]*>/g, '');
+          if (text.trim()) speak(text);
+        }
+      }
+    });
+  }
+document.getElementById('speakBtn2').addEventListener('click', () => speak(GROUPS[S.gIdx][S.wIdx].word));
+document.getElementById('tabNovel').addEventListener('click', () => { S.sentTab = 0; render(); });
+document.getElementById('tabAI').addEventListener('click',   () => { S.sentTab = 1; render(); });
+const tabFlashcard = document.getElementById('tabFlashcard');
+if (tabFlashcard) tabFlashcard.addEventListener('click', () => { S.sentTab = 2; flashcardState.index = 0; render(); if (document.getElementById('flashcardContainer')) renderFlashcard(); });
+document.getElementById('mySentSaveBtn').addEventListener('click', addSentence);
+document.getElementById('mySentInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); addSentence(); }
+});
+document.getElementById('sqStartBtn').addEventListener('click', startStarredQuiz);
+document.getElementById('sqNextBtn').addEventListener('click', sqNext);
+document.getElementById('sqRetryBtn').addEventListener('click', startStarredQuiz);
+document.getElementById('sqResetBtn').addEventListener('click', renderStarredQuizStart);
+document.getElementById('quizHeader').addEventListener('click', () => {
+  const body = document.getElementById('quizBody');
+  const icon = document.getElementById('quizToggleIcon');
+  const open = body.classList.toggle('open');
+  icon.classList.toggle('open', open);
+});
+document.getElementById('quizStartBtn').addEventListener('click', startQuiz);
+document.getElementById('quizSkipBtn').addEventListener('click', () => {
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+});
+document.getElementById('qSpellInput').addEventListener('input', e => {
+  updateQSpellBoxes(e.target.value);
+});
+document.getElementById('qSpellInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); checkQuizSpelling(); }
+});
+document.getElementById('qSpellCheckBtn').addEventListener('click', checkQuizSpelling);
+document.getElementById('qSpellRevealBtn').addEventListener('click', () => {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const fb = document.getElementById('qSpellFeedback');
+  fb.className = 'quiz-feedback wrong-fb';
+  fb.textContent = 'The word is "' + entry.word + '". Try again next time!';
+  fb.style.display = 'block';
+  document.getElementById('qSpellRevealBtn').style.display = 'none';
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  const wordClean = entry.word.toLowerCase().replace(/-/g,'');
+  allBoxes.forEach((b, i) => { b.className = 'spell-box wrong'; b.textContent = wordClean[i] || ''; });
+  const isLast = S.quiz.qIdx === S.quiz.questions.length - 1;
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next Word →';
+  nextBtn.style.display = 'inline-block';
+});
+document.getElementById('quizNextBtn').addEventListener('click', quizNext);
+document.getElementById('quizRetryBtn').addEventListener('click', () => {
+  document.getElementById('quizResult').style.display = 'none';
+  document.getElementById('quizStartArea').style.display = 'block';
+});
+document.getElementById('quizCloseBtn').addEventListener('click', () => {
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+});
+document.getElementById('starredHeader').addEventListener('click', () => {
+  const body = document.getElementById('starredBody');
+  const icon = document.getElementById('starredToggleIcon');
+  const open = body.classList.toggle('open');
+  icon.classList.toggle('open', open);
+});
+document.getElementById('starredToggleBtn').addEventListener('click', () => {
+  const body = document.getElementById('starredBody');
+  const icon = document.getElementById('starredToggleIcon');
+  body.classList.add('open');
+  icon.classList.add('open');
+  document.getElementById('starredSection').scrollIntoView({ behavior: 'smooth' });
+});
+// [Spell listener removed - Spell tab replaced with Flashcard]
+// [Spell listener removed - Spell tab replaced with Flashcard]
+// // [Spell listener removed - Spell tab replaced with Flashcard] /* REMOVED - Spell tab no longer exists */
+const flashPrevBtn = document.getElementById('flashPrevBtn');
+if (flashPrevBtn) flashPrevBtn.addEventListener('click', flashcardPrev);
+const flashNextBtn = document.getElementById('flashNextBtn');
+if (flashNextBtn) flashNextBtn.addEventListener('click', flashcardNext);
+const flashStarBtn = document.getElementById('flashStarBtn');
+if (flashStarBtn) flashStarBtn.addEventListener('click', toggleFlashcardStar);
+// // [Spell listener removed - Spell tab replaced with Flashcard]
+document.addEventListener('keydown', e => {
+  const tag = document.activeElement.tagName;
+  if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+  switch(e.key) {
+    case 'ArrowRight': e.preventDefault(); goWord(S.wIdx + 1); break;
+    case 'ArrowLeft':  e.preventDefault(); goWord(S.wIdx - 1); break;
+    case 'ArrowUp':    e.preventDefault(); goGroup(S.gIdx - 1); break;
+    case 'ArrowDown':  e.preventDefault(); goGroup(S.gIdx + 1); break;
+    case 's': case 'S': toggleStar(); break;
+    case 'p': case 'P': speak(GROUPS[S.gIdx][S.wIdx].word); break;
+    case '1': S.sentTab = 0; render(); break;
+    case '2': S.sentTab = 1; render(); break;
+  }
+});
+
+// ── Print functions ──────────────────────────────────────────
+function openPrintModal() {
+  const grp = GROUPS[S.gIdx];
+  document.getElementById('printGroupLabel').textContent = 'Group ' + (S.gIdx + 1);
+  document.getElementById('printGroupCount').textContent = grp.length;
+  document.getElementById('printAllCount').textContent = VOCAB.length;
+  document.getElementById('printModal').style.display = 'block';
+}
+
+function closePrintModal() {
+  document.getElementById('printModal').style.display = 'none';
+}
+
+function doPrint() {
+  const scope = document.querySelector('input[name="printScope"]:checked').value;
+  const words = scope === 'group' ? GROUPS[S.gIdx] : VOCAB;
+  const groupLabel = scope === 'group' ? 'Group ' + (S.gIdx + 1) : 'All Words';
+
+  const rows = words.map((entry, i) => {
+    const sa = SYNAN[entry.word] || { syn: [], ant: [] };
+    const synText = sa.syn.length ? sa.syn.join(', ') : '—';
+    const antText = sa.ant.length ? sa.ant.join(', ') : '—';
+    return `
+      <div class="pe">
+        <div class="pe-head">
+          <span class="pe-num">${i + 1}</span>
+          <span class="pe-word">${entry.word}</span>
+          <span class="pe-pron">${entry.pron}</span>
+          <span class="pe-ch">${entry.chapter}</span>
+        </div>
+        <div class="pe-def">${entry.def_en}</div>
+        <div class="pe-def zh">${entry.def_zh}</div>
+        <div class="pe-synan">
+          <span class="pe-label syn">SYN</span>${synText}
+          &nbsp;&nbsp;<span class="pe-label ant">ANT</span>${antText}
+        </div>
+        <div class="pe-sent">
+          <span class="pe-sent-label">📖</span>
+          <span>${entry.quote_en}</span>
+        </div>
+        <div class="pe-sent zh">
+          <span class="pe-sent-label"></span>
+          <span>${entry.quote_zh}</span>
+        </div>
+        <div class="pe-sent ex">
+          <span class="pe-sent-label">💡</span>
+          <span>${entry.ex_en}</span>
+        </div>
+        <div class="pe-sent zh">
+          <span class="pe-sent-label"></span>
+          <span>${entry.ex_zh}</span>
+        </div>
+      </div>`;
+  }).join('');
+
+  const html = `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>${BOOK_CONFIG.bookName} — Vocabulary (${groupLabel})</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Songti SC', 'SimSun', serif;
+    font-size: 9.5pt;
+    color: #111;
+    background: white;
+    padding: 14mm 12mm;
+  }
+  h1 {
+    font-size: 15pt;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3pt;
+    letter-spacing: .02em;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 9pt;
+    color: #555;
+    margin-bottom: 12pt;
+    padding-bottom: 8pt;
+    border-bottom: 1.5pt solid #333;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 14pt;
+  }
+  .pe {
+    border-bottom: .5pt solid #ccc;
+    padding: 7pt 0 6pt;
+    break-inside: avoid;
+  }
+  .pe-head {
+    display: flex;
+    align-items: baseline;
+    gap: 5pt;
+    margin-bottom: 2pt;
+    flex-wrap: wrap;
+  }
+  .pe-num {
+    font-size: 7.5pt;
+    color: #888;
+    min-width: 16pt;
+  }
+  .pe-word {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: .01em;
+  }
+  .pe-pron {
+    font-size: 8pt;
+    color: #555;
+    font-style: italic;
+  }
+  .pe-ch {
+    font-size: 7.5pt;
+    color: #888;
+    margin-left: auto;
+  }
+  .pe-def {
+    font-size: 8.5pt;
+    color: #222;
+    margin-bottom: 1.5pt;
+    line-height: 1.4;
+  }
+  .pe-def.zh {
+    color: #444;
+    font-size: 8pt;
+    margin-bottom: 3pt;
+  }
+  .pe-synan {
+    font-size: 8pt;
+    margin-bottom: 3.5pt;
+    color: #333;
+    line-height: 1.5;
+  }
+  .pe-label {
+    font-size: 7pt;
+    font-weight: 700;
+    padding: 1pt 4pt;
+    border-radius: 3pt;
+    margin-right: 3pt;
+    letter-spacing: .04em;
+  }
+  .pe-label.syn {
+    background: #e6faf4;
+    color: #1a7a55;
+    border: .5pt solid #aadec8;
+  }
+  .pe-label.ant {
+    background: #fef0f2;
+    color: #a02040;
+    border: .5pt solid #f0b0bc;
+  }
+  .pe-sent {
+    font-size: 8pt;
+    line-height: 1.45;
+    color: #333;
+    display: flex;
+    gap: 4pt;
+    margin-top: 1.5pt;
+  }
+  .pe-sent.ex { color: #1a4a70; }
+  .pe-sent.zh { color: #555; margin-top: 1pt; }
+  .pe-sent-label {
+    font-size: 8pt;
+    min-width: 12pt;
+    flex-shrink: 0;
+  }
+  .footer {
+    position: running(footer);
+    font-size: 7.5pt;
+    color: #888;
+    text-align: center;
+  }
+  @page {
+    margin: 14mm 12mm 18mm;
+    @bottom-center { content: element(footer); }
+  }
+  @media print {
+    .footer { display: block; }
+  }
+</style>
+</head>
+<body>
+<h1>${BOOK_CONFIG.bookName} Vocabulary</h1>
+<div class="subtitle">${BOOK_CONFIG.author} &nbsp;·&nbsp; ${groupLabel} &nbsp;·&nbsp; ${words.length} words &nbsp;·&nbsp; 📖 Novel sentence &nbsp; 💡 AI example sentence</div>
+<div class="footer">${BOOK_CONFIG.bookName} — ${BOOK_CONFIG.author} &nbsp;|&nbsp; ${groupLabel}</div>
+<div class="grid">${rows}</div>
+</body>
+</html>`;
+
+  closePrintModal();
+  const win = window.open('', '_blank');
+  win.document.write(html);
+  win.document.close();
+  win.focus();
+  setTimeout(() => win.print(), 400);
+}
+
+
+let flashcardState = { side: 'word', index: 0 };
+
+function speakFlashcard() {
+  const group = GROUPS[S.gIdx];
+  const word = group[flashcardState.index].word;
+  speak(word);
+}
+
+
+
+function toggleFlashcard() {
+  const inner = document.getElementById('flashInner');
+  const label = document.getElementById('flashLabel');
+  const content = document.getElementById('flashContent');
+  
+  const group = GROUPS[S.gIdx];
+  const entry = group[flashcardState.index];
+  
+  if (flashcardState.side === 'word') {
+    flashcardState.side = 'def-en';
+    label.textContent = 'English Definition';
+    const pos = entry.part_of_speech || entry.pos || 'word';
+    content.innerHTML = '<span class="flashcard-pos">[' + pos + ']</span>' + entry.def_en;
+    content.className = 'flashcard-content flashcard-def-en';
+    inner.style.background = 'linear-gradient(160deg, rgba(26,74,112,.85), rgba(14,34,48,.95))';
+  } else if (flashcardState.side === 'def-en') {
+    flashcardState.side = 'def-zh';
+    label.textContent = 'Chinese Definition';
+    const pos2 = entry.part_of_speech || entry.pos || 'word';
+    content.innerHTML = '<span class="flashcard-pos">[' + pos2 + ']</span>' + entry.def_zh;
+    content.className = 'flashcard-content flashcard-def-zh';
+    inner.style.background = 'linear-gradient(160deg, rgba(50,34,90,.85), rgba(30,20,50,.95))';
+  } else {
+    flashcardState.side = 'word';
+    label.textContent = 'Word';
+    content.innerHTML = '<div class="flashcard-word-main">' + entry.word + '</div>' + '<div class="flashcard-pron">[' + (entry.pron || '') + ']</div>' + '<div class="flashcard-pos-display">[' + (entry.part_of_speech || '') + ']</div>' + '<button class="flashcard-hear" onclick="speakFlashcard()" data-word="' + entry.word.replace(/'/g, "\\'") + '">🔊 Hear</button>';
+    content.className = 'flashcard-content';
+    inner.style.background = 'linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95))';
+  }
+}
+
+function renderFlashcard() {
+  const container = document.getElementById('flashcardContainer');
+  if (!container) return; // Exit if flashcard container doesn't exist
+  
+  const group = GROUPS[S.gIdx];
+  const entry = group[flashcardState.index];
+  const isStarred = S.starred.has(entry.word);
+  
+  flashcardState.side = 'word';
+  
+  const inner = document.getElementById('flashInner');
+  const label = document.getElementById('flashLabel');
+  const content = document.getElementById('flashContent');
+  
+  label.textContent = 'Word';
+  content.innerHTML = '<div class="flashcard-word-main">' + entry.word + '</div><div class="flashcard-pron">[' + (entry.pron || '') + ']</div><span class="badge badge-pos">[' + (entry.part_of_speech || '') + ']</span><button class="flashcard-hear" id="flashHearBtn" onclick="speakFlashcard()">🔊 Hear</button>';
+  content.className = 'flashcard-content';
+  inner.style.background = 'linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95))';
+  
+  document.getElementById('flashProgress').textContent = (flashcardState.index + 1) + ' / ' + group.length;
+  document.getElementById('flashPrevBtn').disabled = flashcardState.index === 0;
+  document.getElementById('flashNextBtn').disabled = flashcardState.index === group.length - 1;
+  
+  const starBtn = document.getElementById('flashStarBtn');
+  starBtn.textContent = isStarred ? '⭐' : '☆';
+  starBtn.classList.toggle('starred', isStarred);
+}
+
+function flashcardPrev() {
+  if (flashcardState.index > 0) {
+    flashcardState.index--;
+    renderFlashcard();
+  }
+}
+
+function flashcardNext() {
+  const group = GROUPS[S.gIdx];
+  if (flashcardState.index < group.length - 1) {
+    flashcardState.index++;
+    renderFlashcard();
+  }
+}
+
+function toggleFlashcardStar() {
+  const group = GROUPS[S.gIdx];
+  const word = group[flashcardState.index].word;
+  if (S.starred.has(word)) {
+    S.starred.delete(word);
+  } else {
+    S.starred.add(word);
+  }
+  saveStarred();
+  renderFlashcard();
+}
+
+
+// Initialize
+if (VOCAB.length > 1) {
+  render();
+} else {
+  document.getElementById('wordDisplay').textContent = 'Add Data';
+  document.getElementById('defEn').textContent = 'Please paste your 100 vocabulary words into the VOCAB array.';
+}
+</script>
+
+<!-- Print Modal -->
+<div id="printModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.75); z-index:9999; overflow-y:auto; padding:20px;">
+  <div style="max-width:520px; margin:0 auto; background:var(--panel); border:1px solid var(--s35); border-radius:16px; padding:28px 24px;">
+    <h2 style="font-family:Georgia,serif; color:var(--good); margin-bottom:6px; font-size:1.3rem;">🖨️ Print Vocabulary</h2>
+    <p style="color:var(--muted); font-size:.85rem; margin-bottom:20px;">Each entry includes word, pronunciation, definitions, synonyms &amp; antonyms, and both sentences.</p>
+    <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:22px;">
+      <label style="display:flex; align-items:center; gap:10px; cursor:pointer; color:var(--text); font-weight:600; font-size:.95rem;">
+        <input type="radio" name="printScope" value="group" checked style="accent-color:var(--good); width:16px; height:16px;">
+        Current group only (<span id="printGroupLabel">Group 1</span> · <span id="printGroupCount">10</span> words)
+      </label>
+      <label style="display:flex; align-items:center; gap:10px; cursor:pointer; color:var(--text); font-weight:600; font-size:.95rem;">
+        <input type="radio" name="printScope" value="all" style="accent-color:var(--good); width:16px; height:16px;">
+        All words (<span id="printAllCount">100</span> words)
+      </label>
+    </div>
+    <div style="display:flex; gap:10px;">
+      <button onclick="doPrint()" style="flex:1; background:var(--good); color:#06131a; border:none; border-radius:10px; padding:11px; font-weight:800; font-size:.95rem; cursor:pointer;">Print / Save PDF</button>
+      <button onclick="closePrintModal()" style="flex:1; background:var(--panel2); color:var(--muted); border:1px solid var(--s35); border-radius:10px; padding:11px; font-weight:700; font-size:.95rem; cursor:pointer;">Cancel</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
