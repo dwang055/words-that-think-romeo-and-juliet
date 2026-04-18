@@ -1,15 +1,5 @@
 [
-  {
-    "word": "word",
-    "pron": "pronunciation",
-    "def_en": "English definition (with collocations)",
-    "def_zh": "Chinese definition (with collocations)",
-    "quote_en": "example1_en",
-    "quote_zh": "example1_zh",
-    "ex_en": "example2_en",
-    "ex_zh": "example2_zh",
-    "part_of_speech": "part of speech"
-  },
+ 
   {
     "word": "pernicious",
     "pron": "pəˈnɪʃəs",
